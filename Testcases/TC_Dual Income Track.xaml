@@ -174,7 +174,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="918.4,6648" sap2010:WorkflowViewState.IdRef="Sequence_24">
+  <Sequence sap:VirtualizedContainerService.HintSize="918.4,6952.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_formNumber" />
       <Variable x:TypeArguments="x:String" Name="str_TestFooter" />
@@ -220,7 +220,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="918.4,6624.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="918.4,6929.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -228,7 +228,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="881.6,6347.2" sap2010:WorkflowViewState.IdRef="Sequence_85">
+        <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="881.6,6652" sap2010:WorkflowViewState.IdRef="Sequence_85">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="FailedOutput" />
             <Variable x:TypeArguments="x:String" Name="DuplicateData" />
@@ -401,7 +401,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
           </Sequence>
-          <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="848,6230.4" sap2010:WorkflowViewState.IdRef="Sequence_87">
+          <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="848,6535.2" sap2010:WorkflowViewState.IdRef="Sequence_87">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="Data" />
               <Variable x:TypeArguments="sd:DataTable" Name="TestcaseDT1" />
@@ -5093,17 +5093,17 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEachRow>
-            <Sequence DisplayName="Total Execution Time" sap:VirtualizedContainerService.HintSize="814.4,56.8" sap2010:WorkflowViewState.IdRef="Sequence_357">
+            <Sequence DisplayName="Total Execution Time" sap:VirtualizedContainerService.HintSize="814.4,361.6" sap2010:WorkflowViewState.IdRef="Sequence_357">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ur:passedStep str_in_expectedStep="{x:Null}" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="passedStep_53">
                 <ur:passedStep.str_in_actualStep>
                   <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1354">"Total Execution Time: "+Execution_Time</CSharpValue>
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1400">"Total Suite Execution Time: "+Execution_Time</CSharpValue>
                   </InArgument>
                 </ur:passedStep.str_in_actualStep>
                 <ur:passedStep.str_in_reportId>

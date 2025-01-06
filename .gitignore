@@ -1,4 +1,7 @@
-.TestData
-.InputPDFFiles
-.OutputFiles
-.Reports
+
+
+InputPDFFiles/
+OutputFiles/
+TestData/
+Reports/
+*.xlsx

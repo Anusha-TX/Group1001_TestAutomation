@@ -1626,7 +1626,7 @@
                                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <If DisplayName="If(Compare Page)" sap:VirtualizedContainerService.HintSize="624.6666666666666,4072.666666666666" sap2010:WorkflowViewState.IdRef="If_50">
+                                                      <If DisplayName="If(Compare Page)" sap:VirtualizedContainerService.HintSize="624.6666666666666,4072.6666666666665" sap2010:WorkflowViewState.IdRef="If_50">
                                                         <If.Condition>
                                                           <InArgument x:TypeArguments="x:Boolean">
                                                             <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_700">str_baselinePDFText.CompareTo(str_policyPDFText) != 0</CSharpValue>
@@ -2746,7 +2746,7 @@
                                                           </Sequence>
                                                         </If.Then>
                                                         <If.Else>
-                                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="376,364" sap2010:WorkflowViewState.IdRef="Sequence_210">
+                                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="376,273.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_210">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2760,13 +2760,30 @@
                                                                 </InArgument>
                                                               </uta:VerifyExpression.OutputMessageFormat>
                                                             </uta:VerifyExpression>
-                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info">
-                                                              <ui:LogMessage.Message>
-                                                                <InArgument x:TypeArguments="x:Object">
-                                                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1425">"No differences have been found for the page "+currentNumber.ToString()</CSharpValue>
-                                                                </InArgument>
-                                                              </ui:LogMessage.Message>
-                                                            </ui:LogMessage>
+                                                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,54" sap2010:WorkflowViewState.IdRef="CommentOut_71">
+                                                              <ui:CommentOut.Body>
+                                                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,255.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_367">
+                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    </scg:Dictionary>
+                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info">
+                                                                    <ui:LogMessage.Message>
+                                                                      <InArgument x:TypeArguments="x:Object">
+                                                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1425">"No differences have been found for the page "+currentNumber.ToString()</CSharpValue>
+                                                                      </InArgument>
+                                                                    </ui:LogMessage.Message>
+                                                                  </ui:LogMessage>
+                                                                </Sequence>
+                                                              </ui:CommentOut.Body>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </ui:CommentOut>
                                                           </Sequence>
                                                         </If.Else>
                                                       </If>

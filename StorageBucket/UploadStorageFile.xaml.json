@@ -1,0 +1,45 @@
+{
+  "DisplayName": "UploadStorageFile",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_orchestratorFoldername",
+      "DisplayName": "in_orchestratorFoldername",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Shared",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_localFilename",
+      "DisplayName": "in_localFilename",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_storageBucketname",
+      "DisplayName": "in_storageBucketname",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "PDFOutput",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

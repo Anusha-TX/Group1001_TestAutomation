@@ -1,0 +1,33 @@
+{
+  "DisplayName": "DownloadFilesFromStorageBucket",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Product_Name",
+      "DisplayName": "Product_Name",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "GP05",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "Product_id",
+      "DisplayName": "Product_id",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

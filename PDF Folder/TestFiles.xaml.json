@@ -1,0 +1,33 @@
+{
+  "DisplayName": "Testdata",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Product_Name",
+      "DisplayName": "Product_Name",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "PrimeStrt",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "Product_id",
+      "DisplayName": "Product_id",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "PS10.2",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

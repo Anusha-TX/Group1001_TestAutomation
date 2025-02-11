@@ -140,7 +140,7 @@
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"D:\\Group1001\\ObjectFiles\\"+Current_Date</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">Destination_folder+"\\Group1001\\IObjectFiles"+Current_Date</CSharpValue>
                 </InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>

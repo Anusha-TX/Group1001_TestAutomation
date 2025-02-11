@@ -123,7 +123,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DownloadFiles" sap:VirtualizedContainerService.HintSize="792.6666666666666,3850" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DownloadFiles" sap:VirtualizedContainerService.HintSize="712.0000000000001,3501.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Source_file" />
       <Variable x:TypeArguments="x:String" Name="Destination_folder" />
@@ -135,7 +135,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="730.6666666666666,3739.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_11">
+    <Sequence sap:VirtualizedContainerService.HintSize="693.6,3478.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="ExcelPath" />
         <Variable x:TypeArguments="x:String" Default="CopyXMLFile" Name="Str_out_variable" />
@@ -146,7 +146,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Bucket_Name" CacheStrategy="None" DisplayName="Get Asset bucket name" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="668.6666666666666,54" sap2010:WorkflowViewState.IdRef="GetRobotAsset_5">
+      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Bucket_Name" CacheStrategy="None" DisplayName="Get Asset bucket name" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="660,56.8" sap2010:WorkflowViewState.IdRef="GetRobotAsset_5">
         <ui:GetRobotAsset.Value>
           <OutArgument x:TypeArguments="x:String">
             <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">in_bucketName</CSharpReference>
@@ -159,7 +159,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:GetRobotAsset>
-      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Folder_Path" CacheStrategy="None" DisplayName="Get Asset folder path" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="668.6666666666666,54" sap2010:WorkflowViewState.IdRef="GetRobotAsset_6">
+      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Folder_Path" CacheStrategy="None" DisplayName="Get Asset folder path" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="660,56.8" sap2010:WorkflowViewState.IdRef="GetRobotAsset_6">
         <ui:GetRobotAsset.Value>
           <OutArgument x:TypeArguments="x:String">
             <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">Destination_folder</CSharpReference>
@@ -172,7 +172,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:GetRobotAsset>
-      <Assign sap:VirtualizedContainerService.HintSize="668.6666666666666,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign sap:VirtualizedContainerService.HintSize="660,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">
             <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">ExcelPath</CSharpReference>
@@ -184,7 +184,7 @@
           </InArgument>
         </Assign.Value>
       </Assign>
-      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="668.6666666666666,88" sap2010:WorkflowViewState.IdRef="ReadRange_1">
+      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="660,120" sap2010:WorkflowViewState.IdRef="ReadRange_1">
         <ui:ReadRange.DataTable>
           <OutArgument x:TypeArguments="sd:DataTable">
             <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">TestDataDT</CSharpReference>
@@ -201,7 +201,7 @@
           </InArgument>
         </ui:ReadRange.WorkbookPath>
       </ui:ReadRange>
-      <ui:MultipleAssign DisplayName="Multiple Assign Source file" sap:VirtualizedContainerService.HintSize="668.6666666666666,117.33333333333333" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+      <ui:MultipleAssign DisplayName="Multiple Assign Source file" sap:VirtualizedContainerService.HintSize="660,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -211,7 +211,9 @@
                 </OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:String">D:\Group1001\ObjectFiles</InArgument>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">Destination_folder+"\\Group1001\\IObjectFiles"</CSharpValue>
+                </InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
           </scg:List>
@@ -223,7 +225,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="668.6666666666666,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="660,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
         <ui:LogMessage.Message>
           <InArgument x:TypeArguments="x:Object">
             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">"Download storage files from storage bucket starts"</CSharpValue>
@@ -236,13 +238,13 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="668.6666666666666,2845.3333333333335" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="660,2724" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="634.6666666666666,2655.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="626.4,2535.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="XML_File" />
                 <Variable x:TypeArguments="x:String" Name="XML_File_CopyFlag" />
@@ -252,7 +254,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="XML File Copy" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="592.6666666666666,192.66666666666666" sap2010:WorkflowViewState.IdRef="GetRowItem_1">
+              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="XML File Copy" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="592.8,220" sap2010:WorkflowViewState.IdRef="GetRowItem_1">
                 <ui:GetRowItem.Row>
                   <InArgument x:TypeArguments="sd:DataRow">
                     <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">CurrentRow</CSharpValue>

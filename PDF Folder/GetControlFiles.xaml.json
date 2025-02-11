@@ -1,0 +1,21 @@
+{
+  "DisplayName": "GetControlFiles",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Product_Name",
+      "DisplayName": "Product_Name",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "PrimeStrt",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

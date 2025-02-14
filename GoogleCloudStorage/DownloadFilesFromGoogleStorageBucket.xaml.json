@@ -6,11 +6,11 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "Product_Name",
-      "DisplayName": "Product_Name",
+      "Name": "Product_id",
+      "DisplayName": "Product_id",
       "Category": null,
       "Tooltip": null,
-      "Placeholder": "GP05",
+      "Placeholder": null,
       "Widget": null,
       "IsRequired": false,
       "IsPrincipal": true,
@@ -18,8 +18,20 @@
       "DataSourceItems": null
     },
     {
-      "Name": "Product_id",
-      "DisplayName": "Product_id",
+      "Name": "Str_out_variable",
+      "DisplayName": "Str_out_variable",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "CopyXMLFile",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "GCP_TestFlag",
+      "DisplayName": "GCP_TestFlag",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,

@@ -17,4 +17,13 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: UiPathTest@5
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'Uipath Orch'
+    testSet: 'TestSet1'
+    folderName: 'Print Solution Automation'
+    testReportDestination: '$(Build.ArtifactStagingDirectory)\Output.xml'
+    traceLevel: 'Verbose'
+    attachRobotLogs: true
 

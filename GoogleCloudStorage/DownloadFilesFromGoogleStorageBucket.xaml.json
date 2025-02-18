@@ -18,11 +18,11 @@
       "DataSourceItems": null
     },
     {
-      "Name": "Str_out_variable",
-      "DisplayName": "Str_out_variable",
+      "Name": "GCP_TestFlag",
+      "DisplayName": "GCP_TestFlag",
       "Category": null,
       "Tooltip": null,
-      "Placeholder": "CopyXMLFile",
+      "Placeholder": null,
       "Widget": null,
       "IsRequired": false,
       "IsPrincipal": true,
@@ -30,11 +30,23 @@
       "DataSourceItems": null
     },
     {
-      "Name": "GCP_TestFlag",
-      "DisplayName": "GCP_TestFlag",
+      "Name": "Destination_folder",
+      "DisplayName": "Destination_folder",
       "Category": null,
       "Tooltip": null,
       "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "Test_File",
+      "DisplayName": "Test_File",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "GP050052178-RC",
       "Widget": null,
       "IsRequired": false,
       "IsPrincipal": true,

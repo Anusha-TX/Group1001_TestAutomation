@@ -287,7 +287,7 @@
               </uga:GCPScope.Body>
               <uga:GCPScope.ServiceAccountKeyFromFile>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">Destination_folder+"\\TestData\\file.json"</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_96">Destination_folder+"\\TestData\\GCP_Config.json"</CSharpValue>
                 </InArgument>
               </uga:GCPScope.ServiceAccountKeyFromFile>
               <sap:WorkflowViewStateService.ViewState>

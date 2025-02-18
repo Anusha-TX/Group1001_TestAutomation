@@ -48,12 +48,6 @@
     "fileInfoCollection": [
       {
         "editingStatus": "Publishable",
-        "testCaseId": "3abd5bdb-d35d-42f2-8186-ec452cef9aec",
-        "testCaseType": "TestCase",
-        "fileName": "Testcases\\Sandbox.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
         "testCaseId": "ef8e6454-320e-4f4a-ae21-152e1f86d8bf",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_APEX Control MYGA.xaml"

@@ -4,8 +4,8 @@
   "description": "Test Automation Project",
   "main": "Main.xaml",
   "dependencies": {
-    "Group1001_commonUtilities": "[2.0.52]",
-    "Group1001_printSolutionlib": "[1.0.41]",
+    "Group1001_commonUtilities": "[2.0.53]",
+    "Group1001_printSolutionlib": "[1.0.52]",
     "UiPath.Java.Activities": "1.3.1",
     "UiPath.System.Activities": "[24.10.7]",
     "UiPath.Testing.Activities": "[24.10.0]",

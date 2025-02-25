@@ -1,0 +1,21 @@
+{
+  "DisplayName": "UploadStorageFile",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_storageBucketname",
+      "DisplayName": "in_storageBucketname",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "TestPDFFiles",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

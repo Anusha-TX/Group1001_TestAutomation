@@ -5,7 +5,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "Group1001_commonUtilities": "[2.0.53]",
-    "Group1001_printSolutionlib": "[1.0.53]",
+    "Group1001_printSolutionlib": "[1.0.62]",
     "UiPath.Java.Activities": "1.3.1",
     "UiPath.System.Activities": "[24.10.7]",
     "UiPath.Testing.Activities": "[24.10.0]",
@@ -16,7 +16,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.4.0",
-  "projectVersion": "1.0.1",
+  "projectVersion": "1.0.22",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -47,76 +47,112 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "ef8e6454-320e-4f4a-ae21-152e1f86d8bf",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_APEX Control MYGA.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "6ca9330f-771a-4ecb-8c21-e3d295de0933",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Dual Income Track.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "f9b459eb-3dc9-48c6-9adf-5ebe9437a157",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Growth Pathways.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "df6ceb64-2862-47d1-bf6b-c19d6446ac21",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Momentum Growth Plus.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "1c136e99-436c-4109-af5e-8b1b09bc9031",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Momentum Growth.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "08a37daf-a067-4a07-96dc-e8c0f1fd6ed7",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Pinnicle.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "97ab12cc-2684-4f6a-8bd4-dc19bb8a6b48",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Primestart Bonus10.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "f66b3254-752f-4498-85dd-8056fc10ceb1",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Retirement Stages.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "2371d5f8-0208-4a56-8338-9f43dc052424",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_SteadyPace MYGA.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "788f89f4-29d8-4dcb-a690-1a1bfb574946",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Target Growth.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "5f6e5413-ebeb-49fc-8da0-f6e77b0cc941",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Target Income.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "d32dfeea-0dca-4a92-a882-6eaff7c2bfce",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_TruSelect MYGA.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "71661bf8-546b-449e-a0c3-9693924ded63",
+        "testCaseType": "TestCase",
+        "fileName": "Prerequisite\\GCP_TestFile_Retrieval.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6ecbe9b3-09a4-492f-8372-822ed5a2e313",
+        "testCaseType": "TestCase",
+        "fileName": "Prerequisite\\TestData_Retrieval.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3701f71e-8cdf-42d5-ae4a-632a398c433a",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\TC_Parity MYGA.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "24531aa8-8d79-44bd-b15f-da3d2f7b7e64",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\TC_FastBreak MYGA.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "756c6c7f-d690-44d3-9554-1e8c4760a359",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\TC_Clear Spring.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f3753334-20a8-4c5c-9087-8737c56062cf",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\TC_Sandbox.xaml"
       }
     ],
     "modernBehavior": false,

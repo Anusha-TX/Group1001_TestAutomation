@@ -5,7 +5,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "Group1001_commonUtilities": "[2.0.53]",
-    "Group1001_printSolutionlib": "[1.0.62]",
+    "Group1001_printSolutionlib": "[1.0.64]",
     "UiPath.Java.Activities": "1.3.1",
     "UiPath.System.Activities": "[24.10.7]",
     "UiPath.Testing.Activities": "[24.10.0]",
@@ -16,7 +16,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.4.0",
-  "projectVersion": "1.0.22",
+  "projectVersion": "1.0.24",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -119,37 +119,37 @@
         "fileName": "Testcases\\TC_TruSelect MYGA.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "71661bf8-546b-449e-a0c3-9693924ded63",
         "testCaseType": "TestCase",
         "fileName": "Prerequisite\\GCP_TestFile_Retrieval.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "6ecbe9b3-09a4-492f-8372-822ed5a2e313",
         "testCaseType": "TestCase",
         "fileName": "Prerequisite\\TestData_Retrieval.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "3701f71e-8cdf-42d5-ae4a-632a398c433a",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Parity MYGA.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "24531aa8-8d79-44bd-b15f-da3d2f7b7e64",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_FastBreak MYGA.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "756c6c7f-d690-44d3-9554-1e8c4760a359",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Clear Spring.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "f3753334-20a8-4c5c-9087-8737c56062cf",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Sandbox.xaml"

@@ -150,36 +150,10 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "abd99c8d-228c-4695-802d-f69d1357d23d",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Prerequisite\\Upload_Output_data_files.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
         "testCaseId": "1c3e2f83-f772-4402-82b3-1f0f04acbc06",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Prerequisite\\GCP_Move_TestXML_To_MOVEitXML.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "b121dc00-493d-49f2-867c-35b8495feae0",
-        "testCaseType": "TestCase",
-        "fileName": "Prerequisite\\GCP_ControlFile_Retrieval.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "cc9dca3f-55d8-4a70-9c17-ed744fa331ea",
-        "testCaseType": "TestCase",
-        "fileName": "Prerequisite\\GCP_TestFile_Retrieval.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "80f21774-a0f3-4cca-8fbf-49f343fa9d3e",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Prerequisite\\TestCase.xaml"
       }
     ],
     "modernBehavior": false,

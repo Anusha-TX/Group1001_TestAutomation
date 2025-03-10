@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Pre_RequisiteGCP" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:gg="clr-namespace:Group1001_printSolutionlib.GoogleCloudStorage;assembly=Group1001_printSolutionlib" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Pre_RequisiteGCP" this:Pre_RequisiteGCP.Str_out_variable="Momentum Growth" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:gg="clr-namespace:Group1001_printSolutionlib.GoogleCloudStorage;assembly=Group1001_printSolutionlib" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="Str_out_variable" Type="InOutArgument(x:String)" />
+    <x:Property Name="Str_out_variable" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
   <sap2010:WorkflowViewState.IdRef>Pre_RequisiteGCP_1</sap2010:WorkflowViewState.IdRef>
@@ -284,28 +284,28 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:GetRowItem>
-                <gg:DownloadFilesFromGoogleStorageBucket_Controlfiles DisplayName="DownloadFilesFromGoogleStorageBucket-Controlfiles" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="DownloadFilesFromGoogleStorageBucket_Controlfiles_3">
-                  <gg:DownloadFilesFromGoogleStorageBucket_Controlfiles.ControlProduct_id>
+                <gg:DownloadFilesFromGoogleStorageBucket_controlfiles DisplayName="DownloadFilesFromGoogleStorageBucket-controlfiles" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="DownloadFilesFromGoogleStorageBucket_controlfiles_1">
+                  <gg:DownloadFilesFromGoogleStorageBucket_controlfiles.ControlProduct_id>
                     <InArgument x:TypeArguments="x:String">
                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_171">ControlProduct_id</CSharpValue>
                     </InArgument>
-                  </gg:DownloadFilesFromGoogleStorageBucket_Controlfiles.ControlProduct_id>
-                  <gg:DownloadFilesFromGoogleStorageBucket_Controlfiles.Control_PDF>
+                  </gg:DownloadFilesFromGoogleStorageBucket_controlfiles.ControlProduct_id>
+                  <gg:DownloadFilesFromGoogleStorageBucket_controlfiles.Control_PDF>
                     <InArgument x:TypeArguments="x:String">
                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_172">ControlFile</CSharpValue>
                     </InArgument>
-                  </gg:DownloadFilesFromGoogleStorageBucket_Controlfiles.Control_PDF>
-                  <gg:DownloadFilesFromGoogleStorageBucket_Controlfiles.Destination_folder>
+                  </gg:DownloadFilesFromGoogleStorageBucket_controlfiles.Control_PDF>
+                  <gg:DownloadFilesFromGoogleStorageBucket_controlfiles.Destination_folder>
                     <InArgument x:TypeArguments="x:String">
                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_169">Destination_folder</CSharpValue>
                     </InArgument>
-                  </gg:DownloadFilesFromGoogleStorageBucket_Controlfiles.Destination_folder>
-                  <gg:DownloadFilesFromGoogleStorageBucket_Controlfiles.GCP_ControlFlag>
+                  </gg:DownloadFilesFromGoogleStorageBucket_controlfiles.Destination_folder>
+                  <gg:DownloadFilesFromGoogleStorageBucket_controlfiles.GCP_ControlFlag>
                     <InArgument x:TypeArguments="x:String">
                       <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_170">GCP_ControlFlag</CSharpValue>
                     </InArgument>
-                  </gg:DownloadFilesFromGoogleStorageBucket_Controlfiles.GCP_ControlFlag>
-                </gg:DownloadFilesFromGoogleStorageBucket_Controlfiles>
+                  </gg:DownloadFilesFromGoogleStorageBucket_controlfiles.GCP_ControlFlag>
+                </gg:DownloadFilesFromGoogleStorageBucket_controlfiles>
               </Sequence>
             </Sequence>
           </ActivityAction>

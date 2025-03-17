@@ -1,8 +1,7 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="DownloadFiles" this:DownloadFiles.Destination_folder="D:\Group1001_TestAutomation_mARCH" this:DownloadFiles.Test_XML_Copy_Flag="Y" this:DownloadFiles.Regression="Y" this:DownloadFiles.TestXML_id="MG10" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uga="clr-namespace:UiPath.GoogleCloud.Activities;assembly=UiPath.GoogleCloud.Activities" xmlns:ugc="clr-namespace:UiPath.GoogleCloud.Core;assembly=UiPath.GoogleCloud" xmlns:ugm="clr-namespace:UiPath.GoogleCloud.Models;assembly=UiPath.GoogleCloud" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="DownloadFiles" this:DownloadFiles.Destination_folder="D:\Group1001_TestAutomation_mARCH" this:DownloadFiles.Test_XML_Copy_Flag="Y" this:DownloadFiles.TestXML_id="MG10" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uga="clr-namespace:UiPath.GoogleCloud.Activities;assembly=UiPath.GoogleCloud.Activities" xmlns:ugc="clr-namespace:UiPath.GoogleCloud.Core;assembly=UiPath.GoogleCloud" xmlns:ugm="clr-namespace:UiPath.GoogleCloud.Models;assembly=UiPath.GoogleCloud" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Destination_folder" Type="InArgument(x:String)" />
     <x:Property Name="Test_XML_Copy_Flag" Type="InArgument(x:String)" />
-    <x:Property Name="Regression" Type="InArgument(x:String)" />
     <x:Property Name="TestXML_id" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
@@ -131,7 +130,7 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DownloadFiles" sap:VirtualizedContainerService.HintSize="1008,1334.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DownloadFiles" sap:VirtualizedContainerService.HintSize="728.8000000000001,562.84" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Source_file" />
       <Variable x:TypeArguments="si:DirectoryInfo" Name="Folder_Info" />
@@ -143,9 +142,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="654.4,1311.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="456,507.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="617.6,1033.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence sap:VirtualizedContainerService.HintSize="702.4,2188.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <Sequence.Variables>
             <Variable x:TypeArguments="sd:DataTable" Name="TestDataDT" />
           </Sequence.Variables>
@@ -155,7 +154,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Bucket_Name" CacheStrategy="None" DisplayName="Get Asset bucket name" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="GetRobotAsset_5">
+          <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Bucket_Name" CacheStrategy="None" DisplayName="Get Asset bucket name" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="668.8,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_5">
             <ui:GetRobotAsset.Value>
               <OutArgument x:TypeArguments="x:String">
                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">in_bucketName</CSharpReference>
@@ -163,15 +162,15 @@
             </ui:GetRobotAsset.Value>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:GetRobotAsset>
-          <If sap:VirtualizedContainerService.HintSize="584,916.8" sap2010:WorkflowViewState.IdRef="If_6">
+          <If sap:VirtualizedContainerService.HintSize="668.8,1953.6" sap2010:WorkflowViewState.IdRef="If_5">
             <If.Condition>
               <InArgument x:TypeArguments="x:Boolean">
-                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_152">Regression=="Y"</CSharpValue>
+                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_177">Test_XML_Copy_Flag=="Y"</CSharpValue>
               </InArgument>
             </If.Condition>
             <sap:WorkflowViewStateService.ViewState>
@@ -181,531 +180,215 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <If sap:VirtualizedContainerService.HintSize="516.8,605.6" sap2010:WorkflowViewState.IdRef="If_8">
-                  <If.Condition>
-                    <InArgument x:TypeArguments="x:Boolean">
-                      <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_153">TestXML_id=="Regression"</CSharpValue>
-                    </InArgument>
-                  </If.Condition>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <If.Then>
-                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_49">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </Sequence>
-                  </If.Then>
-                  <If.Else>
-                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="483.2,354.4" sap2010:WorkflowViewState.IdRef="Sequence_50">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <If sap:VirtualizedContainerService.HintSize="449.6,294.4" sap2010:WorkflowViewState.IdRef="If_5">
-                        <If.Condition>
-                          <InArgument x:TypeArguments="x:Boolean">
-                            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_154">Test_XML_Copy_Flag=="Y" || Test_XML_Copy_Flag=="N"</CSharpValue>
-                          </InArgument>
-                        </If.Condition>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <uga:GCPScope ServiceAccountKey="{x:Null}" DisplayName="Google Cloud Scope" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="GCPScope_6" ScopeType="ServiceAccountKeyFromFile">
-                              <uga:GCPScope.Body>
-                                <ActivityAction x:TypeArguments="ugc:GCPCmd">
-                                  <ActivityAction.Argument>
-                                    <DelegateInArgument x:TypeArguments="ugc:GCPCmd" Name="GoogleCloudScopePropertyTag" />
-                                  </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,1453.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
-                                    <Sequence.Variables>
-                                      <Variable x:TypeArguments="ugm:GCPBucket" Name="out_Bucket" />
-                                      <Variable x:TypeArguments="ugm:GCPObject" Name="Out_obj" />
-                                    </Sequence.Variables>
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <uga:GCPGetBucket ConnectionClient="{x:Null}" ConnectionId="{x:Null}" DisplayName="Get Bucket" sap:VirtualizedContainerService.HintSize="534.4,122.4" sap2010:WorkflowViewState.IdRef="GCPGetBucket_5" InsideScope="True" UseConnectionService="True">
-                                      <uga:GCPGetBucket.Bucket>
-                                        <OutArgument x:TypeArguments="ugm:GCPBucket">
-                                          <CSharpReference x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">out_Bucket</CSharpReference>
-                                        </OutArgument>
-                                      </uga:GCPGetBucket.Bucket>
-                                      <uga:GCPGetBucket.BucketName>
-                                        <InArgument x:TypeArguments="x:String">
-                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_102">in_bucketName</CSharpValue>
-                                        </InArgument>
-                                      </uga:GCPGetBucket.BucketName>
-                                    </uga:GCPGetBucket>
-                                    <uga:GCPForEachObjectInBucket ConnectionClient="{x:Null}" ConnectionId="{x:Null}" Index="{x:Null}" LimitToFirst="{x:Null}" Result="{x:Null}" DisplayName="For Each Object in Bucket" sap:VirtualizedContainerService.HintSize="534.4,371.2" sap2010:WorkflowViewState.IdRef="GCPForEachObjectInBucket_10" InsideScope="True" UseConnectionService="True">
-                                      <uga:GCPForEachObjectInBucket.Body>
-                                        <ActivityAction x:TypeArguments="ugm:GCPObject">
-                                          <ActivityAction.Argument>
-                                            <DelegateInArgument x:TypeArguments="ugm:GCPObject" Name="GCPObject" />
-                                          </ActivityAction.Argument>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_41">
-                                            <Sequence.Variables>
-                                              <Variable x:TypeArguments="x:String" Name="gcp" />
-                                            </Sequence.Variables>
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                            <uga:GCPDownloadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" File="{x:Null}" FileName="{x:Null}" FilePath="{x:Null}" Generation="{x:Null}" Timeout="{x:Null}" DisplayName="Download Object to File" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="GCPDownloadObject_9" InsideScope="True" Overwrite="True" UseConnectionService="True">
-                                              <uga:GCPDownloadObject.Folder>
-                                                <InArgument x:TypeArguments="x:String">
-                                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_145">Destination_folder + "\\Group1001\\"</CSharpValue>
-                                                </InArgument>
-                                              </uga:GCPDownloadObject.Folder>
-                                              <uga:GCPDownloadObject.Object>
-                                                <InArgument x:TypeArguments="ugm:GCPObject">
-                                                  <CSharpValue x:TypeArguments="ugm:GCPObject" sap2010:WorkflowViewState.IdRef="CSharpValue`1_143">GCPObject</CSharpValue>
-                                                </InArgument>
-                                              </uga:GCPDownloadObject.Object>
-                                            </uga:GCPDownloadObject>
-                                          </Sequence>
-                                        </ActivityAction>
-                                      </uga:GCPForEachObjectInBucket.Body>
-                                      <uga:GCPForEachObjectInBucket.Bucket>
-                                        <InArgument x:TypeArguments="ugm:GCPBucket">
-                                          <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_141">out_Bucket</CSharpValue>
-                                        </InArgument>
-                                      </uga:GCPForEachObjectInBucket.Bucket>
-                                      <uga:GCPForEachObjectInBucket.Prefix>
-                                        <InArgument x:TypeArguments="x:String">
-                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_147">"PrintSolutionData/Test_XML/" + TestXML_id+"/"</CSharpValue>
-                                        </InArgument>
-                                      </uga:GCPForEachObjectInBucket.Prefix>
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                    </uga:GCPForEachObjectInBucket>
-                                    <Sequence DisplayName="Test file xml to moveitxml" sap:VirtualizedContainerService.HintSize="534.4,900" sap2010:WorkflowViewState.IdRef="Sequence_43">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <Assign sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
-                                        <Assign.To>
-                                          <OutArgument x:TypeArguments="s:Object[]">
-                                            <CSharpReference x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_27">Get_Files</CSharpReference>
-                                          </OutArgument>
-                                        </Assign.To>
-                                        <Assign.Value>
-                                          <InArgument x:TypeArguments="s:Object[]">
-                                            <CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_148">System.IO.Directory.GetFiles(Destination_folder + "\\Group1001\\PrintSolutionData\\Test_XML\\"+TestXML_id)</CSharpValue>
-                                          </InArgument>
-                                        </Assign.Value>
-                                      </Assign>
-                                      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each currentItem" sap:VirtualizedContainerService.HintSize="500.8,537.6" sap2010:WorkflowViewState.IdRef="ForEach`1_3">
-                                        <ui:ForEach.Body>
-                                          <ActivityAction x:TypeArguments="x:Object">
-                                            <ActivityAction.Argument>
-                                              <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
-                                            </ActivityAction.Argument>
-                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,391.2" sap2010:WorkflowViewState.IdRef="Sequence_39">
-                                              <Sequence.Variables>
-                                                <Variable x:TypeArguments="x:String" Name="GetFilename" />
-                                              </Sequence.Variables>
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                              <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
-                                                <Assign.To>
-                                                  <OutArgument x:TypeArguments="x:String">
-                                                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_28">GetFilename</CSharpReference>
-                                                  </OutArgument>
-                                                </Assign.To>
-                                                <Assign.Value>
-                                                  <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_137">Path.GetFileName(currentItem.ToString())</CSharpValue>
-                                                  </InArgument>
-                                                </Assign.Value>
-                                              </Assign>
-                                              <uga:GCPUploadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" ContentType="{x:Null}" CustomerManagedKey="{x:Null}" FileResourceToUpload="{x:Null}" Metadata="{x:Null}" Object="{x:Null}" PredefinedAcl="{x:Null}" StorageClass="{x:Null}" Timeout="{x:Null}" DisplayName="Upload Object from File" sap:VirtualizedContainerService.HintSize="433.6,217.6" sap2010:WorkflowViewState.IdRef="GCPUploadObject_4" InsideScope="True" UseConnectionService="True">
-                                                <uga:GCPUploadObject.Bucket>
-                                                  <InArgument x:TypeArguments="ugm:GCPBucket">
-                                                    <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_121">out_Bucket</CSharpValue>
-                                                  </InArgument>
-                                                </uga:GCPUploadObject.Bucket>
-                                                <uga:GCPUploadObject.FileToUpload>
-                                                  <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_136">currentItem.ToString()</CSharpValue>
-                                                  </InArgument>
-                                                </uga:GCPUploadObject.FileToUpload>
-                                                <uga:GCPUploadObject.ObjectName>
-                                                  <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_149">"PrintSolutionData/MOVEit_XML/"+TestXML_id+"/"+GetFilename</CSharpValue>
-                                                  </InArgument>
-                                                </uga:GCPUploadObject.ObjectName>
-                                                <sap:WorkflowViewStateService.ViewState>
-                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                  </scg:Dictionary>
-                                                </sap:WorkflowViewStateService.ViewState>
-                                              </uga:GCPUploadObject>
-                                            </Sequence>
-                                          </ActivityAction>
-                                        </ui:ForEach.Body>
-                                        <ui:ForEach.Values>
-                                          <InArgument x:TypeArguments="sc:IEnumerable">
-                                            <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_128">Get_Files</CSharpValue>
-                                          </InArgument>
-                                        </ui:ForEach.Values>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </ui:ForEach>
-                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
-                                        <ui:LogMessage.Message>
-                                          <InArgument x:TypeArguments="x:Object">
-                                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_150">"File move to TestXML to MOVEitXML for: "+TestXML_id</CSharpValue>
-                                          </InArgument>
-                                        </ui:LogMessage.Message>
-                                      </ui:LogMessage>
-                                    </Sequence>
-                                  </Sequence>
-                                </ActivityAction>
-                              </uga:GCPScope.Body>
-                              <uga:GCPScope.ServiceAccountKeyFromFile>
-                                <InArgument x:TypeArguments="x:String">
-                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">Destination_folder+"\\TestData\\GCP_Config.json"</CSharpValue>
-                                </InArgument>
-                              </uga:GCPScope.ServiceAccountKeyFromFile>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </uga:GCPScope>
-                          </Sequence>
-                        </If.Then>
-                        <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
-                              <ui:LogMessage.Message>
-                                <InArgument x:TypeArguments="x:Object">
-                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_172">"Test_XML_Copy_Flag: "+TestXML_id</CSharpValue>
-                                </InArgument>
-                              </ui:LogMessage.Message>
-                            </ui:LogMessage>
-                          </Sequence>
-                        </If.Else>
-                      </If>
-                    </Sequence>
-                  </If.Else>
-                </If>
-              </Sequence>
-            </If.Then>
-            <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="550.4,730.4" sap2010:WorkflowViewState.IdRef="Sequence_45">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="635.2,1702.4" sap2010:WorkflowViewState.IdRef="Sequence_27">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <If sap:VirtualizedContainerService.HintSize="516.8,670.4" sap2010:WorkflowViewState.IdRef="If_9">
-                  <If.Condition>
-                    <InArgument x:TypeArguments="x:Boolean">
-                      <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_170">TestXML_id=="Regression"</CSharpValue>
-                    </InArgument>
-                  </If.Condition>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <If.Then>
-                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_57">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </Sequence>
-                  </If.Then>
-                  <If.Else>
-                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="483.2,419.2" sap2010:WorkflowViewState.IdRef="Sequence_58">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <If sap:VirtualizedContainerService.HintSize="449.6,359.2" sap2010:WorkflowViewState.IdRef="If_7">
-                        <If.Condition>
-                          <InArgument x:TypeArguments="x:Boolean">
-                            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_155">Test_XML_Copy_Flag=="Y"</CSharpValue>
-                          </InArgument>
-                        </If.Condition>
+                <uga:GCPScope ServiceAccountKey="{x:Null}" DisplayName="Google Cloud Scope" sap:VirtualizedContainerService.HintSize="601.6,1642.4" sap2010:WorkflowViewState.IdRef="GCPScope_6" ScopeType="ServiceAccountKeyFromFile">
+                  <uga:GCPScope.Body>
+                    <ActivityAction x:TypeArguments="ugc:GCPCmd">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ugc:GCPCmd" Name="GoogleCloudScopePropertyTag" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,1453.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="ugm:GCPBucket" Name="out_Bucket" />
+                          <Variable x:TypeArguments="ugm:GCPObject" Name="Out_obj" />
+                        </Sequence.Variables>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_52">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <uga:GCPScope ServiceAccountKey="{x:Null}" DisplayName="Google Cloud Scope" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="GCPScope_7" ScopeType="ServiceAccountKeyFromFile">
-                              <uga:GCPScope.Body>
-                                <ActivityAction x:TypeArguments="ugc:GCPCmd">
-                                  <ActivityAction.Argument>
-                                    <DelegateInArgument x:TypeArguments="ugc:GCPCmd" Name="GoogleCloudScopePropertyTag" />
-                                  </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="500.8,972.8" sap2010:WorkflowViewState.IdRef="Sequence_46">
-                                    <Sequence.Variables>
-                                      <Variable x:TypeArguments="ugm:GCPBucket" Name="out_Bucket" />
-                                      <Variable x:TypeArguments="ugm:GCPObject" Name="Out_obj" />
-                                    </Sequence.Variables>
+                        <uga:GCPGetBucket ConnectionClient="{x:Null}" ConnectionId="{x:Null}" DisplayName="Get Bucket" sap:VirtualizedContainerService.HintSize="534.4,122.4" sap2010:WorkflowViewState.IdRef="GCPGetBucket_5" InsideScope="True" UseConnectionService="True">
+                          <uga:GCPGetBucket.Bucket>
+                            <OutArgument x:TypeArguments="ugm:GCPBucket">
+                              <CSharpReference x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">out_Bucket</CSharpReference>
+                            </OutArgument>
+                          </uga:GCPGetBucket.Bucket>
+                          <uga:GCPGetBucket.BucketName>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_102">in_bucketName</CSharpValue>
+                            </InArgument>
+                          </uga:GCPGetBucket.BucketName>
+                        </uga:GCPGetBucket>
+                        <uga:GCPForEachObjectInBucket ConnectionClient="{x:Null}" ConnectionId="{x:Null}" Index="{x:Null}" LimitToFirst="{x:Null}" Result="{x:Null}" DisplayName="For Each Object in Bucket" sap:VirtualizedContainerService.HintSize="534.4,371.2" sap2010:WorkflowViewState.IdRef="GCPForEachObjectInBucket_10" InsideScope="True" UseConnectionService="True">
+                          <uga:GCPForEachObjectInBucket.Body>
+                            <ActivityAction x:TypeArguments="ugm:GCPObject">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ugm:GCPObject" Name="GCPObject" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:String" Name="gcp" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uga:GCPDownloadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" File="{x:Null}" FileName="{x:Null}" FilePath="{x:Null}" Generation="{x:Null}" Timeout="{x:Null}" DisplayName="Download Object to File" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="GCPDownloadObject_9" InsideScope="True" Overwrite="True" UseConnectionService="True">
+                                  <uga:GCPDownloadObject.Folder>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_173">Destination_folder + "\\Test_XML_Copy\\"</CSharpValue>
+                                    </InArgument>
+                                  </uga:GCPDownloadObject.Folder>
+                                  <uga:GCPDownloadObject.Object>
+                                    <InArgument x:TypeArguments="ugm:GCPObject">
+                                      <CSharpValue x:TypeArguments="ugm:GCPObject" sap2010:WorkflowViewState.IdRef="CSharpValue`1_143">GCPObject</CSharpValue>
+                                    </InArgument>
+                                  </uga:GCPDownloadObject.Object>
+                                </uga:GCPDownloadObject>
+                              </Sequence>
+                            </ActivityAction>
+                          </uga:GCPForEachObjectInBucket.Body>
+                          <uga:GCPForEachObjectInBucket.Bucket>
+                            <InArgument x:TypeArguments="ugm:GCPBucket">
+                              <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_141">out_Bucket</CSharpValue>
+                            </InArgument>
+                          </uga:GCPForEachObjectInBucket.Bucket>
+                          <uga:GCPForEachObjectInBucket.Prefix>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_147">"PrintSolutionData/Test_XML/" + TestXML_id+"/"</CSharpValue>
+                            </InArgument>
+                          </uga:GCPForEachObjectInBucket.Prefix>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uga:GCPForEachObjectInBucket>
+                        <Sequence DisplayName="Test file xml to moveitxml" sap:VirtualizedContainerService.HintSize="534.4,900" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="s:Object[]">
+                                <CSharpReference x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_27">Get_Files</CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="s:Object[]">
+                                <CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_174">System.IO.Directory.GetFiles(Destination_folder + "\\Test_XML_Copy\\PrintSolutionData\\Test_XML\\"+TestXML_id)</CSharpValue>
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each currentItem" sap:VirtualizedContainerService.HintSize="500.8,537.6" sap2010:WorkflowViewState.IdRef="ForEach`1_3">
+                            <ui:ForEach.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,391.2" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:String" Name="GetFilename" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">
+                                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_28">GetFilename</CSharpReference>
+                                      </OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_137">Path.GetFileName(currentItem.ToString())</CSharpValue>
+                                      </InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <uga:GCPUploadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" ContentType="{x:Null}" CustomerManagedKey="{x:Null}" FileResourceToUpload="{x:Null}" Metadata="{x:Null}" Object="{x:Null}" PredefinedAcl="{x:Null}" StorageClass="{x:Null}" Timeout="{x:Null}" DisplayName="Upload Object from File" sap:VirtualizedContainerService.HintSize="433.6,217.6" sap2010:WorkflowViewState.IdRef="GCPUploadObject_4" InsideScope="True" UseConnectionService="True">
+                                    <uga:GCPUploadObject.Bucket>
+                                      <InArgument x:TypeArguments="ugm:GCPBucket">
+                                        <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_121">out_Bucket</CSharpValue>
+                                      </InArgument>
+                                    </uga:GCPUploadObject.Bucket>
+                                    <uga:GCPUploadObject.FileToUpload>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_136">currentItem.ToString()</CSharpValue>
+                                      </InArgument>
+                                    </uga:GCPUploadObject.FileToUpload>
+                                    <uga:GCPUploadObject.ObjectName>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_149">"PrintSolutionData/MOVEit_XML/"+TestXML_id+"/"+GetFilename</CSharpValue>
+                                      </InArgument>
+                                    </uga:GCPUploadObject.ObjectName>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uga:GCPGetBucket ConnectionClient="{x:Null}" ConnectionId="{x:Null}" DisplayName="Get Bucket" sap:VirtualizedContainerService.HintSize="467.2,122.4" sap2010:WorkflowViewState.IdRef="GCPGetBucket_6" InsideScope="True" UseConnectionService="True">
-                                      <uga:GCPGetBucket.Bucket>
-                                        <OutArgument x:TypeArguments="ugm:GCPBucket">
-                                          <CSharpReference x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpReference`1_29">out_Bucket</CSharpReference>
-                                        </OutArgument>
-                                      </uga:GCPGetBucket.Bucket>
-                                      <uga:GCPGetBucket.BucketName>
-                                        <InArgument x:TypeArguments="x:String">
-                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_157">in_bucketName</CSharpValue>
-                                        </InArgument>
-                                      </uga:GCPGetBucket.BucketName>
-                                    </uga:GCPGetBucket>
-                                    <uga:GCPForEachObjectInBucket ConnectionClient="{x:Null}" ConnectionId="{x:Null}" Index="{x:Null}" LimitToFirst="{x:Null}" Result="{x:Null}" DisplayName="For Each Object in Bucket" sap:VirtualizedContainerService.HintSize="467.2,371.2" sap2010:WorkflowViewState.IdRef="GCPForEachObjectInBucket_11" InsideScope="True" UseConnectionService="True">
-                                      <uga:GCPForEachObjectInBucket.Body>
-                                        <ActivityAction x:TypeArguments="ugm:GCPObject">
-                                          <ActivityAction.Argument>
-                                            <DelegateInArgument x:TypeArguments="ugm:GCPObject" Name="GCPObject" />
-                                          </ActivityAction.Argument>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_47">
-                                            <Sequence.Variables>
-                                              <Variable x:TypeArguments="x:String" Name="gcp" />
-                                            </Sequence.Variables>
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                            <uga:GCPDownloadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" File="{x:Null}" FileName="{x:Null}" FilePath="{x:Null}" Generation="{x:Null}" Timeout="{x:Null}" DisplayName="Download Object to File" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="GCPDownloadObject_10" InsideScope="True" Overwrite="True" UseConnectionService="True">
-                                              <uga:GCPDownloadObject.Folder>
-                                                <InArgument x:TypeArguments="x:String">
-                                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_161">Destination_folder + "\\Group1001\\"</CSharpValue>
-                                                </InArgument>
-                                              </uga:GCPDownloadObject.Folder>
-                                              <uga:GCPDownloadObject.Object>
-                                                <InArgument x:TypeArguments="ugm:GCPObject">
-                                                  <CSharpValue x:TypeArguments="ugm:GCPObject" sap2010:WorkflowViewState.IdRef="CSharpValue`1_160">GCPObject</CSharpValue>
-                                                </InArgument>
-                                              </uga:GCPDownloadObject.Object>
-                                            </uga:GCPDownloadObject>
-                                          </Sequence>
-                                        </ActivityAction>
-                                      </uga:GCPForEachObjectInBucket.Body>
-                                      <uga:GCPForEachObjectInBucket.Bucket>
-                                        <InArgument x:TypeArguments="ugm:GCPBucket">
-                                          <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_158">out_Bucket</CSharpValue>
-                                        </InArgument>
-                                      </uga:GCPForEachObjectInBucket.Bucket>
-                                      <uga:GCPForEachObjectInBucket.Prefix>
-                                        <InArgument x:TypeArguments="x:String">
-                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_159">"PrintSolutionData/Test_XML/" + TestXML_id+"/"</CSharpValue>
-                                        </InArgument>
-                                      </uga:GCPForEachObjectInBucket.Prefix>
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                    </uga:GCPForEachObjectInBucket>
-                                    <Sequence DisplayName="Test file xml to moveitxml" sap:VirtualizedContainerService.HintSize="467.2,419.2" sap2010:WorkflowViewState.IdRef="Sequence_51">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
-                                        <Assign.To>
-                                          <OutArgument x:TypeArguments="s:Object[]">
-                                            <CSharpReference x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_30">Get_Files</CSharpReference>
-                                          </OutArgument>
-                                        </Assign.To>
-                                        <Assign.Value>
-                                          <InArgument x:TypeArguments="s:Object[]">
-                                            <CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_162">System.IO.Directory.GetFiles(Destination_folder + "\\Group1001\\PrintSolutionData\\Test_XML\\"+TestXML_id)</CSharpValue>
-                                          </InArgument>
-                                        </Assign.Value>
-                                      </Assign>
-                                      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each currentItem" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="ForEach`1_4">
-                                        <ui:ForEach.Body>
-                                          <ActivityAction x:TypeArguments="x:Object">
-                                            <ActivityAction.Argument>
-                                              <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
-                                            </ActivityAction.Argument>
-                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,391.2" sap2010:WorkflowViewState.IdRef="Sequence_48">
-                                              <Sequence.Variables>
-                                                <Variable x:TypeArguments="x:String" Name="GetFilename" />
-                                              </Sequence.Variables>
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                              <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
-                                                <Assign.To>
-                                                  <OutArgument x:TypeArguments="x:String">
-                                                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_31">GetFilename</CSharpReference>
-                                                  </OutArgument>
-                                                </Assign.To>
-                                                <Assign.Value>
-                                                  <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_164">Path.GetFileName(currentItem.ToString())</CSharpValue>
-                                                  </InArgument>
-                                                </Assign.Value>
-                                              </Assign>
-                                              <uga:GCPUploadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" ContentType="{x:Null}" CustomerManagedKey="{x:Null}" FileResourceToUpload="{x:Null}" Metadata="{x:Null}" Object="{x:Null}" PredefinedAcl="{x:Null}" StorageClass="{x:Null}" Timeout="{x:Null}" DisplayName="Upload Object from File" sap:VirtualizedContainerService.HintSize="433.6,217.6" sap2010:WorkflowViewState.IdRef="GCPUploadObject_5" InsideScope="True" UseConnectionService="True">
-                                                <uga:GCPUploadObject.Bucket>
-                                                  <InArgument x:TypeArguments="ugm:GCPBucket">
-                                                    <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_165">out_Bucket</CSharpValue>
-                                                  </InArgument>
-                                                </uga:GCPUploadObject.Bucket>
-                                                <uga:GCPUploadObject.FileToUpload>
-                                                  <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_167">currentItem.ToString()</CSharpValue>
-                                                  </InArgument>
-                                                </uga:GCPUploadObject.FileToUpload>
-                                                <uga:GCPUploadObject.ObjectName>
-                                                  <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_166">"PrintSolutionData/MOVEit_XML/"+TestXML_id+"/"+GetFilename</CSharpValue>
-                                                  </InArgument>
-                                                </uga:GCPUploadObject.ObjectName>
-                                                <sap:WorkflowViewStateService.ViewState>
-                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                  </scg:Dictionary>
-                                                </sap:WorkflowViewStateService.ViewState>
-                                              </uga:GCPUploadObject>
-                                            </Sequence>
-                                          </ActivityAction>
-                                        </ui:ForEach.Body>
-                                        <ui:ForEach.Values>
-                                          <InArgument x:TypeArguments="sc:IEnumerable">
-                                            <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_163">Get_Files</CSharpValue>
-                                          </InArgument>
-                                        </ui:ForEach.Values>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </ui:ForEach>
-                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
-                                        <ui:LogMessage.Message>
-                                          <InArgument x:TypeArguments="x:Object">
-                                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_168">"File move to TestXML to MOVEitXML for: "+TestXML_id</CSharpValue>
-                                          </InArgument>
-                                        </ui:LogMessage.Message>
-                                      </ui:LogMessage>
-                                    </Sequence>
-                                  </Sequence>
-                                </ActivityAction>
-                              </uga:GCPScope.Body>
-                              <uga:GCPScope.ServiceAccountKeyFromFile>
-                                <InArgument x:TypeArguments="x:String">
-                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_156">Destination_folder+"\\TestData\\GCP_Config.json"</CSharpValue>
-                                </InArgument>
-                              </uga:GCPScope.ServiceAccountKeyFromFile>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </uga:GCPScope>
-                          </Sequence>
-                        </If.Then>
-                        <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                  </uga:GCPUploadObject>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEach.Body>
+                            <ui:ForEach.Values>
+                              <InArgument x:TypeArguments="sc:IEnumerable">
+                                <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_128">Get_Files</CSharpValue>
+                              </InArgument>
+                            </ui:ForEach.Values>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                          </Sequence>
-                        </If.Else>
-                      </If>
-                    </Sequence>
-                  </If.Else>
-                </If>
+                          </ui:ForEach>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                            <ui:LogMessage.Message>
+                              <InArgument x:TypeArguments="x:Object">
+                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_178">"File moved to TestXML to MOVEitXML for: "+TestXML_id</CSharpValue>
+                              </InArgument>
+                            </ui:LogMessage.Message>
+                          </ui:LogMessage>
+                        </Sequence>
+                      </Sequence>
+                    </ActivityAction>
+                  </uga:GCPScope.Body>
+                  <uga:GCPScope.ServiceAccountKeyFromFile>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">Destination_folder+"\\TestData\\GCP_Config.json"</CSharpValue>
+                    </InArgument>
+                  </uga:GCPScope.ServiceAccountKeyFromFile>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:GCPScope>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
               </Sequence>
             </If.Else>
           </If>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="620.8,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422.4,296.8" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -713,24 +396,23 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="416,348" sap2010:WorkflowViewState.IdRef="Sequence_59">
+            <Sequence sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="Sequence_59">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
                 <ui:LogMessage.Message>
                   <InArgument x:TypeArguments="x:Object">
                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_171">exception.Message</CSharpValue>
                   </InArgument>
                 </ui:LogMessage.Message>
               </ui:LogMessage>
-              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="False" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" OutputMessageFormat="Error occured while moving file from TestXML to MOVEitXML" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
             </Sequence>
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="620.8,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="422.4,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>

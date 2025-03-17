@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="UploadOutputTestdataToStorageBucket" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uc="clr-namespace:UiPath.Core;assembly=UiPath.GoogleCloud" xmlns:uga="clr-namespace:UiPath.GoogleCloud.Activities;assembly=UiPath.GoogleCloud.Activities" xmlns:ugc="clr-namespace:UiPath.GoogleCloud.Core;assembly=UiPath.GoogleCloud" xmlns:ugm="clr-namespace:UiPath.GoogleCloud.Models;assembly=UiPath.GoogleCloud" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="UploadOutputTestdataToStorageBucket" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uc="clr-namespace:UiPath.Core;assembly=UiPath.GoogleCloud" xmlns:uga="clr-namespace:UiPath.GoogleCloud.Activities;assembly=UiPath.GoogleCloud.Activities" xmlns:ugc="clr-namespace:UiPath.GoogleCloud.Core;assembly=UiPath.GoogleCloud" xmlns:ugm="clr-namespace:UiPath.GoogleCloud.Models;assembly=UiPath.GoogleCloud" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Destination_folder" Type="InArgument(x:String)" />
     <x:Property Name="str_reportsLocation" Type="InArgument(x:String)" />
@@ -127,7 +127,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UploadOutputTestdataToStorageBucket" sap:VirtualizedContainerService.HintSize="712.0000000000001,1988.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="UploadOutputTestdataToStorageBucket" sap:VirtualizedContainerService.HintSize="728.8000000000001,562.84" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="in_bucketName" />
     </Sequence.Variables>
@@ -136,7 +136,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="571.2,1965.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="456,348" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
         <Sequence DisplayName="Testdata" sap:VirtualizedContainerService.HintSize="534.4,1711.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
@@ -370,10 +370,10 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="537.6,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422.4,160.8" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -381,20 +381,12 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
-                <ui:LogMessage.Message>
-                  <InArgument x:TypeArguments="x:Object">
-                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">exception.Message</CSharpValue>
-                  </InArgument>
-                </ui:LogMessage.Message>
-              </ui:LogMessage>
-              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="False" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" OutputMessageFormat="Error occured while uploading Output Testdata" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
             </Sequence>
           </ActivityAction>
         </Catch>

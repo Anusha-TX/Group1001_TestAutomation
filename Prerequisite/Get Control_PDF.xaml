@@ -356,7 +356,7 @@
                           </sap:WorkflowViewStateService.ViewState>
                           <Throw sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="Throw_1">
                             <InArgument x:TypeArguments="s:Exception">
-                              <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_181">new BusinessRuleException("No file found in Control_PDF in GCP: "+ControlFile)</CSharpValue>
+                              <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_182">new BusinessRuleException("No Control PDF file found in GCP : "+ControlFile)</CSharpValue>
                             </InArgument>
                           </Throw>
                         </Sequence>

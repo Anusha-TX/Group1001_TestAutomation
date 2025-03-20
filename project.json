@@ -157,7 +157,7 @@
         "fileName": "Testcases\\TC_PDF_Compare.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "707c6779-cbd3-486d-9c60-dfce79fe4771",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,

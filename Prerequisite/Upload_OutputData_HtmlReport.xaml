@@ -160,23 +160,23 @@
               </InArgument>
             </Assign.Value>
           </Assign>
-          <gg:UploadOutputTestdataToStorageBucket sap:VirtualizedContainerService.HintSize="433.6,217.6" sap2010:WorkflowViewState.IdRef="UploadOutputTestdataToStorageBucket_1">
-            <gg:UploadOutputTestdataToStorageBucket.Destination_folder>
+          <gg:UploadOutput_HtmlToStorageBucket sap:VirtualizedContainerService.HintSize="433.6,217.6" sap2010:WorkflowViewState.IdRef="UploadOutput_HtmlToStorageBucket_1">
+            <gg:UploadOutput_HtmlToStorageBucket.Destination_folder>
               <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">Destination_folder</CSharpValue>
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Destination_folder</CSharpValue>
               </InArgument>
-            </gg:UploadOutputTestdataToStorageBucket.Destination_folder>
-            <gg:UploadOutputTestdataToStorageBucket.product_name>
+            </gg:UploadOutput_HtmlToStorageBucket.Destination_folder>
+            <gg:UploadOutput_HtmlToStorageBucket.product_name>
               <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Str_out_variable</CSharpValue>
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">Str_out_variable</CSharpValue>
               </InArgument>
-            </gg:UploadOutputTestdataToStorageBucket.product_name>
-            <gg:UploadOutputTestdataToStorageBucket.str_reportsLocation>
+            </gg:UploadOutput_HtmlToStorageBucket.product_name>
+            <gg:UploadOutput_HtmlToStorageBucket.str_reportsLocation>
               <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">str_reportsLocation</CSharpValue>
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">str_reportsLocation</CSharpValue>
               </InArgument>
-            </gg:UploadOutputTestdataToStorageBucket.str_reportsLocation>
-          </gg:UploadOutputTestdataToStorageBucket>
+            </gg:UploadOutput_HtmlToStorageBucket.str_reportsLocation>
+          </gg:UploadOutput_HtmlToStorageBucket>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
@@ -191,7 +191,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="416,129.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>

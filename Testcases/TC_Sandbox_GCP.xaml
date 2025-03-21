@@ -189,7 +189,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence - PDF Comparsion" sap:VirtualizedContainerService.HintSize="985.6,13000" sap2010:WorkflowViewState.IdRef="Sequence_120">
+  <Sequence DisplayName="Sequence - PDF Comparsion" sap:VirtualizedContainerService.HintSize="985.6,12746.4" sap2010:WorkflowViewState.IdRef="Sequence_120">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_formNumber" />
       <Variable x:TypeArguments="x:String" Name="str_TestFooter" />
@@ -255,7 +255,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="985.6,12976.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="985.6,12723.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -263,7 +263,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="948.8,12881.6" sap2010:WorkflowViewState.IdRef="Sequence_121">
+        <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="948.8,12853.6" sap2010:WorkflowViewState.IdRef="Sequence_121">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="DuplicateData" />
           </Sequence.Variables>
@@ -383,6 +383,12 @@
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">Str_out_variable</CSharpReference>
                 </InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ui:InvokeWorkflowFile>
           </Sequence>
           <Sequence DisplayName="Fetch values from Json" sap:VirtualizedContainerService.HintSize="915.2,1754.4" sap2010:WorkflowViewState.IdRef="Sequence_122">
@@ -527,7 +533,7 @@
               </If.Else>
             </If>
           </Sequence>
-          <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="915.2,9524" sap2010:WorkflowViewState.IdRef="Sequence_123">
+          <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="915.2,9496" sap2010:WorkflowViewState.IdRef="Sequence_123">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="Data" />
               <Variable x:TypeArguments="sd:DataTable" Name="TestcaseDT1" />
@@ -5350,7 +5356,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEachRow>
-            <Sequence DisplayName="Total Execution Time" sap:VirtualizedContainerService.HintSize="651.2,56.8" sap2010:WorkflowViewState.IdRef="Sequence_228">
+            <Sequence DisplayName="Total Execution Time" sap:VirtualizedContainerService.HintSize="881.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_228">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -5375,7 +5381,7 @@
                 </gr:passedStep.str_in_testId>
               </gr:passedStep>
             </Sequence>
-            <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="651.2,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" WorkbookPath="OutputFiles\Output_Data.xlsx">
+            <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="881.6,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" WorkbookPath="OutputFiles\Output_Data.xlsx">
               <ui:WriteRange.DataTable>
                 <InArgument x:TypeArguments="sd:DataTable">
                   <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_336">TestDataDT</CSharpValue>
@@ -5387,7 +5393,7 @@
                 </InArgument>
               </ui:WriteRange.SheetName>
             </ui:WriteRange>
-            <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="651.2,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Summary">
+            <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="881.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Summary">
               <ui:ReadRange.DataTable>
                 <OutArgument x:TypeArguments="sd:DataTable">
                   <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_153">dt_Sumary</CSharpReference>
@@ -5399,7 +5405,7 @@
                 </InArgument>
               </ui:ReadRange.WorkbookPath>
             </ui:ReadRange>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="651.2,56.8" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="881.6,56.8" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
@@ -5490,7 +5496,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEachRow>
-            <Sequence DisplayName="Mail Report" sap:VirtualizedContainerService.HintSize="651.2,56.8" sap2010:WorkflowViewState.IdRef="Sequence_138">
+            <Sequence DisplayName="Mail Report" sap:VirtualizedContainerService.HintSize="881.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_138">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Int32" Name="PassCount" />
                 <Variable x:TypeArguments="x:Int32" Name="FailCount" />
@@ -5850,14 +5856,14 @@
                 </If.Else>
               </If>
             </Sequence>
-            <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="651.2,148" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Summary" WorkbookPath="OutputFiles\Output_Data.xlsx">
+            <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="881.6,148" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Summary" WorkbookPath="OutputFiles\Output_Data.xlsx">
               <ui:WriteRange.DataTable>
                 <InArgument x:TypeArguments="sd:DataTable">
                   <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_365">dt_Sumary</CSharpValue>
                 </InArgument>
               </ui:WriteRange.DataTable>
             </ui:WriteRange>
-            <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="651.2,148" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Summary">
+            <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="881.6,148" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Summary">
               <ui:WriteRange.DataTable>
                 <InArgument x:TypeArguments="sd:DataTable">
                   <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_366">dt_Sumary</CSharpValue>
@@ -5869,7 +5875,7 @@
                 </InArgument>
               </ui:WriteRange.WorkbookPath>
             </ui:WriteRange>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="651.2,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="881.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_10">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,300" sap2010:WorkflowViewState.IdRef="Sequence_239">
                   <sap:WorkflowViewStateService.ViewState>
@@ -5903,7 +5909,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Upload_Output_data - Invoke Workflow File (Prerequisite\\Upload_Output_data.xaml)" sap:VirtualizedContainerService.HintSize="651.2,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Prerequisite\\Upload_Output_data.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Upload_Output_data and HtmlReprot - Invoke Workflow File (Prerequisite\\Upload_Output_data.xaml)" sap:VirtualizedContainerService.HintSize="881.6,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Prerequisite\\Upload_OutputData_HtmlReport.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InOutArgument x:TypeArguments="x:String" x:Key="Str_out_variable">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_167">Str_out_variable</CSharpReference>

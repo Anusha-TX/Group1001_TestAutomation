@@ -1,0 +1,45 @@
+{
+  "DisplayName": "Move TestXML_To_MOVEitXML",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Destination_folder",
+      "DisplayName": "Destination_folder",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "D:\\Group1001_TestAutomation_mARCH",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "Test_XML_Copy_Flag",
+      "DisplayName": "Test_XML_Copy_Flag",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Y",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "TestXML_id",
+      "DisplayName": "TestXML_id",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "MG10",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "DisplayName": "DownloadFilesFromGoogleStorageBucket-controlfiles",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Destination_folder",
+      "DisplayName": "Destination_folder",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "D:\\Group1001_TestAutomation_feb26",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "GCP_ControlFlag",
+      "DisplayName": "GCP_ControlFlag",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Y",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "ControlProduct_id",
+      "DisplayName": "ControlProduct_id",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "MG10",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "Control_PDF",
+      "DisplayName": "Control_PDF",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "AK MG100009205-T",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

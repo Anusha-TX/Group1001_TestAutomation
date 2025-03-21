@@ -142,7 +142,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="456,432" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="ControlFile" sap:VirtualizedContainerService.HintSize="617.6,1364" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence DisplayName="ControlFile" sap:VirtualizedContainerService.HintSize="617.6,1336" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <Sequence.Variables>
             <Variable x:TypeArguments="sd:DataTable" Name="TestDataDT" />
           </Sequence.Variables>
@@ -152,7 +152,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Bucket_Name" CacheStrategy="None" DisplayName="Get Asset bucket name" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="584,84.8" sap2010:WorkflowViewState.IdRef="GetRobotAsset_5">
+          <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Bucket_Name" CacheStrategy="None" DisplayName="Get Asset bucket name" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="GetRobotAsset_5">
             <ui:GetRobotAsset.Value>
               <OutArgument x:TypeArguments="x:String">
                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">in_bucketName</CSharpReference>
@@ -249,7 +249,7 @@
                                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
                                   <ui:LogMessage.Message>
                                     <InArgument x:TypeArguments="x:Object">
-                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_153">"New Control PDF File found in Test_PDF folder : "+Control_PDF</CSharpValue>
+                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_154">"New Control PDF File found in Control_PDF folder : "+Control_PDF</CSharpValue>
                                     </InArgument>
                                   </ui:LogMessage.Message>
                                 </ui:LogMessage>

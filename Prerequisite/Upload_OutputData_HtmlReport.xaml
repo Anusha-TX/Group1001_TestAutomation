@@ -2,6 +2,7 @@
   <x:Members>
     <x:Property Name="Str_out_variable" Type="InOutArgument(x:String)" />
     <x:Property Name="str_reportsLocation" Type="InOutArgument(x:String)" />
+    <x:Property Name="Log_Message_variable" Type="InOutArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
   <sap2010:WorkflowViewState.IdRef>Upload_Output_data_files_1</sap2010:WorkflowViewState.IdRef>
@@ -131,15 +132,15 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Upload_Output_data_files" sap:VirtualizedContainerService.HintSize="712.0000000000001,668.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Upload_Output_data_files" sap:VirtualizedContainerService.HintSize="712.0000000000001,720.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="504,645.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="504,697.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="output_datafiles" sap:VirtualizedContainerService.HintSize="467.2,391.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence DisplayName="output_datafiles" sap:VirtualizedContainerService.HintSize="467.2,443.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="Destination_folder" />
           </Sequence.Variables>
@@ -160,12 +161,17 @@
               </InArgument>
             </Assign.Value>
           </Assign>
-          <gg:UploadOutput_HtmlToStorageBucket sap:VirtualizedContainerService.HintSize="433.6,217.6" sap2010:WorkflowViewState.IdRef="UploadOutput_HtmlToStorageBucket_1">
+          <gg:UploadOutput_HtmlToStorageBucket sap:VirtualizedContainerService.HintSize="433.6,269.6" sap2010:WorkflowViewState.IdRef="UploadOutput_HtmlToStorageBucket_1">
             <gg:UploadOutput_HtmlToStorageBucket.Destination_folder>
               <InArgument x:TypeArguments="x:String">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Destination_folder</CSharpValue>
               </InArgument>
             </gg:UploadOutput_HtmlToStorageBucket.Destination_folder>
+            <gg:UploadOutput_HtmlToStorageBucket.Log_Message_Variable>
+              <OutArgument x:TypeArguments="x:String">
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">Log_Message_variable</CSharpReference>
+              </OutArgument>
+            </gg:UploadOutput_HtmlToStorageBucket.Log_Message_Variable>
             <gg:UploadOutput_HtmlToStorageBucket.product_name>
               <InArgument x:TypeArguments="x:String">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">Str_out_variable</CSharpValue>

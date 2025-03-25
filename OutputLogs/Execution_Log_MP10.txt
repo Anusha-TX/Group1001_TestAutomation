@@ -1,0 +1,13 @@
+ 
+
+03/24/2025 15:47:04Execution started for product: MP10
+03/24/2025 15:48:42 [Info] The Java JAR file downloaded in the TestData folder
+03/24/2025 15:48:45 [Info] The Input_TestData Excel downloaded in the TestData folder
+03/24/2025 15:48:45 [Info] The Input_TestData Excel downloaded in the TestData folder
+03/24/2025 15:48:46 [Info] No previous product folder available: For MP10 in the ControlPDFFiles folder
+03/24/2025 15:48:46 [Info] No previous product folder available: ForMP10 in the TestPDFFiles folder
+03/24/2025 15:49:43 [Info] Total Text Executable File: 0
+Total Image Executable File: 0
+03/24/2025 15:49:45 [Error] No executable testcase, all text and image comparison flag set to N
+03/24/2025 15:49:50 [Info] Number of Passed Tests: 0 and Number of Failed Tests: 0
+03/24/2025 15:49:53 [Error]  the values in the Excel file not updated correctly

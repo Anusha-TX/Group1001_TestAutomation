@@ -3,6 +3,7 @@
     <x:Property Name="Destination_folder" Type="InArgument(x:String)" />
     <x:Property Name="Test_XML_Copy_Flag" Type="InArgument(x:String)" />
     <x:Property Name="TestXML_id" Type="InArgument(x:String)" />
+    <x:Property Name="Log_Message_Variable" Type="OutArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
   <sap:VirtualizedContainerService.HintSize>820,3914.6666666666665</sap:VirtualizedContainerService.HintSize>
@@ -130,7 +131,7 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DownloadFiles" sap:VirtualizedContainerService.HintSize="739.2,2489.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DownloadFiles" sap:VirtualizedContainerService.HintSize="739.2,2716.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Source_file" />
       <Variable x:TypeArguments="si:DirectoryInfo" Name="Folder_Info" />
@@ -142,9 +143,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="739.2,2466.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="739.2,2693.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="702.4,2188.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence sap:VirtualizedContainerService.HintSize="702.4,2416" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <Sequence.Variables>
             <Variable x:TypeArguments="sd:DataTable" Name="TestDataDT" />
           </Sequence.Variables>
@@ -167,7 +168,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:GetRobotAsset>
-          <If sap:VirtualizedContainerService.HintSize="668.8,1953.6" sap2010:WorkflowViewState.IdRef="If_5">
+          <If sap:VirtualizedContainerService.HintSize="668.8,2180.8" sap2010:WorkflowViewState.IdRef="If_5">
             <If.Condition>
               <InArgument x:TypeArguments="x:Boolean">
                 <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_177">Test_XML_Copy_Flag=="Y"</CSharpValue>
@@ -180,19 +181,19 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="635.2,1702.4" sap2010:WorkflowViewState.IdRef="Sequence_27">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="635.2,1929.6" sap2010:WorkflowViewState.IdRef="Sequence_27">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uga:GCPScope ServiceAccountKey="{x:Null}" DisplayName="Google Cloud Scope" sap:VirtualizedContainerService.HintSize="601.6,1642.4" sap2010:WorkflowViewState.IdRef="GCPScope_6" ScopeType="ServiceAccountKeyFromFile">
+                <uga:GCPScope ServiceAccountKey="{x:Null}" DisplayName="Google Cloud Scope" sap:VirtualizedContainerService.HintSize="601.6,1869.6" sap2010:WorkflowViewState.IdRef="GCPScope_6" ScopeType="ServiceAccountKeyFromFile">
                   <uga:GCPScope.Body>
                     <ActivityAction x:TypeArguments="ugc:GCPCmd">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="ugc:GCPCmd" Name="GoogleCloudScopePropertyTag" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,1453.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,1680.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="ugm:GCPBucket" Name="out_Bucket" />
                           <Variable x:TypeArguments="ugm:GCPObject" Name="Out_obj" />
@@ -262,7 +263,10 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uga:GCPForEachObjectInBucket>
-                        <Sequence DisplayName="Test file xml to moveitxml" sap:VirtualizedContainerService.HintSize="534.4,900" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                        <Sequence DisplayName="Test file xml to moveitxml" sap:VirtualizedContainerService.HintSize="534.4,1127.2" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="Log_Mesage" />
+                          </Sequence.Variables>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -346,13 +350,37 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:ForEach>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                          <Assign sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">Log_Mesage</CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_186">"File moved from TestXML to MOVEitXML for the product "+TestXML_id</CSharpValue>
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="500.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
                             <ui:LogMessage.Message>
                               <InArgument x:TypeArguments="x:Object">
-                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_179">"File moved from TestXML to MOVEitXML for the product "+TestXML_id</CSharpValue>
+                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_187">Log_Mesage</CSharpValue>
                               </InArgument>
                             </ui:LogMessage.Message>
                           </ui:LogMessage>
+                          <Assign sap:VirtualizedContainerService.HintSize="500.8,104.8" sap2010:WorkflowViewState.IdRef="Assign_12">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_40">Log_Message_Variable</CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_189">Log_Message_Variable+Environment.NewLine+DateTime.Now+" [Info] "+Log_Mesage</CSharpValue>
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
                         </Sequence>
                       </Sequence>
                     </ActivityAction>
@@ -396,19 +424,46 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="Sequence_59">
+            <Sequence sap:VirtualizedContainerService.HintSize="467.2,362.4" sap2010:WorkflowViewState.IdRef="Sequence_59">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="Log_Mesage" />
+              </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">Log_Mesage</CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_184">exception.Message</CSharpValue>
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info">
                 <ui:LogMessage.Message>
                   <InArgument x:TypeArguments="x:Object">
-                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_171">exception.Message</CSharpValue>
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_185">Log_Mesage</CSharpValue>
                   </InArgument>
                 </ui:LogMessage.Message>
               </ui:LogMessage>
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_11">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_39">Log_Message_Variable</CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_188">Log_Message_Variable+Environment.NewLine+DateTime.Now+" [Error] "+Log_Mesage</CSharpValue>
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
             </Sequence>
           </ActivityAction>
         </Catch>

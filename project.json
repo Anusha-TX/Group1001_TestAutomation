@@ -150,12 +150,6 @@
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "ab2085c7-a73f-4b19-ba94-9a5e6d22d750",
-        "testCaseType": "TestCase",
-        "fileName": "Testcases\\TC_PDF_Compare.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
         "testCaseId": "9fc08d50-0f4c-45bd-9e2b-708d8ecf5d07",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TC_Sandbox_GCP(1).xaml"

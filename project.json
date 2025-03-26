@@ -156,15 +156,15 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "bb1f49f9-ac84-4cc0-b721-a2c5929c86e7",
-        "testCaseType": "TestCase",
-        "fileName": "Testcases\\TC_Sandbox_GCP.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
         "testCaseId": "c121c46c-3afe-4b74-985f-2bf4ae5efb31",
         "testCaseType": "TestCase",
         "fileName": "Testcases\\TESTING.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "bb1f49f9-ac84-4cc0-b721-a2c5929c86e7",
+        "testCaseType": "TestCase",
+        "fileName": "Testcases\\TC_Sandbox_GCP-1.xaml"
       }
     ],
     "modernBehavior": false,

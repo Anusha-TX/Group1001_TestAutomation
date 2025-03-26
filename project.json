@@ -164,7 +164,7 @@
         "editingStatus": "InProgress",
         "testCaseId": "bb1f49f9-ac84-4cc0-b721-a2c5929c86e7",
         "testCaseType": "TestCase",
-        "fileName": "Testcases\\TC_Sandbox_GCP-1.xaml"
+        "fileName": "Testcases\\TC_Sandbox_GCP.xaml"
       }
     ],
     "modernBehavior": false,

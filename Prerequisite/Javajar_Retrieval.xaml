@@ -1,8 +1,9 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Javajar_Reterival" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:go="clr-namespace:Group1001_printSolutionlib.OrchestratorStorageBucket;assembly=Group1001_printSolutionlib" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Javajar_Reterival" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:go="clr-namespace:Group1001_printSolutionlib.OrchestratorStorageBucket;assembly=Group1001_printSolutionlib" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Log_Message_Variable" Type="InOutArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>784.6666666666666,974.6666666666666</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Javajar_Reterival_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -106,7 +107,7 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Javajar_Reterival" sap:VirtualizedContainerService.HintSize="712.0000000000001,682.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Javajar_Reterival" sap:VirtualizedContainerService.HintSize="598,910" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Log_Mesage" />
     </Sequence.Variables>
@@ -115,9 +116,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="507.2,659.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,822" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Java_jar_Reterival" sap:VirtualizedContainerService.HintSize="467.2,391.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Java_jar_Reterival" sap:VirtualizedContainerService.HintSize="496,288.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="Destination_path" />
           </Sequence.Variables>
@@ -127,7 +128,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">
                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">Destination_path</CSharpReference>
@@ -139,7 +140,7 @@
               </InArgument>
             </Assign.Value>
           </Assign>
-          <go:DownloadStorageBucket_JavaJar sap:VirtualizedContainerService.HintSize="433.6,217.6" sap2010:WorkflowViewState.IdRef="DownloadStorageBucket_JavaJar_1" Path="PDFComparison-0.0.1-SNAPSHOT-jar-with-dependencies.jar">
+          <go:DownloadStorageBucket_JavaJar sap:VirtualizedContainerService.HintSize="434,220" sap2010:WorkflowViewState.IdRef="DownloadStorageBucket_JavaJar_1" Path="PDFComparison-0.0.1-SNAPSHOT-jar-with-dependencies.jar">
             <go:DownloadStorageBucket_JavaJar.Destination_path>
               <InArgument x:TypeArguments="x:String">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">Destination_path</CSharpValue>
@@ -154,7 +155,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="473.6,472" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,630" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -165,13 +166,13 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="467.2,400.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence sap:VirtualizedContainerService.HintSize="496,558.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign sap:VirtualizedContainerService.HintSize="434,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_2">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">Log_Mesage</CSharpReference>
@@ -181,7 +182,14 @@
                   <InArgument x:TypeArguments="x:String">Java Jar not downloaded</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="False" sap:VirtualizedContainerService.HintSize="434,123.33333333333333" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyExpression.OutputMessageFormat>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">Log_Mesage</CSharpValue>
+                  </InArgument>
+                </uta:VerifyExpression.OutputMessageFormat>
+              </uta:VerifyExpression>
+              <Assign sap:VirtualizedContainerService.HintSize="434,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">Log_Message_Variable</CSharpReference>
@@ -193,7 +201,7 @@
                   </InArgument>
                 </Assign.Value>
               </Assign>
-              <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1">
+              <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1">
                 <TerminateWorkflow.Reason>
                   <InArgument x:TypeArguments="x:String">
                     <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">Log_Mesage</CSharpValue>

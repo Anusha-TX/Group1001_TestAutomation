@@ -5,6 +5,7 @@
     <x:Property Name="Log_Message_variable" Type="InOutArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>784,980.6666666666666</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Upload_Output_data_files_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -132,15 +133,15 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Upload_Output_data_files" sap:VirtualizedContainerService.HintSize="712.0000000000001,682.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Upload_Output_data_files" sap:VirtualizedContainerService.HintSize="598,916" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="507.2,659.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,828" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="output_datafiles" sap:VirtualizedContainerService.HintSize="467.2,443.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence DisplayName="output_datafiles" sap:VirtualizedContainerService.HintSize="496,478" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="Destination_folder" />
           </Sequence.Variables>
@@ -149,7 +150,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">
                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">Destination_folder</CSharpReference>
@@ -161,7 +162,7 @@
               </InArgument>
             </Assign.Value>
           </Assign>
-          <gg:UploadOutput_HtmlToStorageBucket sap:VirtualizedContainerService.HintSize="433.6,269.6" sap2010:WorkflowViewState.IdRef="UploadOutput_HtmlToStorageBucket_1">
+          <gg:UploadOutput_HtmlToStorageBucket sap:VirtualizedContainerService.HintSize="434,272.6666666666667" sap2010:WorkflowViewState.IdRef="UploadOutput_HtmlToStorageBucket_1">
             <gg:UploadOutput_HtmlToStorageBucket.Destination_folder>
               <InArgument x:TypeArguments="x:String">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Destination_folder</CSharpValue>
@@ -186,7 +187,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="473.6,472" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,633.3333333333334" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -197,7 +198,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="467.2,400.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence sap:VirtualizedContainerService.HintSize="496,561.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="Log_Mesage" />
               </Sequence.Variables>
@@ -206,7 +207,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">Log_Mesage</CSharpReference>
@@ -216,7 +217,14 @@
                   <InArgument x:TypeArguments="x:String">Files (HTML, Logs, Output data) not uploaded to GCP.</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="False" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyExpression.OutputMessageFormat>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">Log_Mesage</CSharpValue>
+                  </InArgument>
+                </uta:VerifyExpression.OutputMessageFormat>
+              </uta:VerifyExpression>
+              <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">Log_Message_variable</CSharpReference>
@@ -228,10 +236,10 @@
                   </InArgument>
                 </Assign.Value>
               </Assign>
-              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="False" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="False" sap:VirtualizedContainerService.HintSize="434,114.66666666666667" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
                 <uta:VerifyExpression.OutputMessageFormat>
                   <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">"Exception Message"+exception.Message</CSharpValue>
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">Log_Mesage</CSharpValue>
                   </InArgument>
                 </uta:VerifyExpression.OutputMessageFormat>
               </uta:VerifyExpression>

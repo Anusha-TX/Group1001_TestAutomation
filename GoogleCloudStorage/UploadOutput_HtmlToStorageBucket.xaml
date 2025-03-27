@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="UploadOutputTestdataToStorageBucket" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uc="clr-namespace:UiPath.Core;assembly=UiPath.GoogleCloud" xmlns:uga="clr-namespace:UiPath.GoogleCloud.Activities;assembly=UiPath.GoogleCloud.Activities" xmlns:ugc="clr-namespace:UiPath.GoogleCloud.Core;assembly=UiPath.GoogleCloud" xmlns:ugm="clr-namespace:UiPath.GoogleCloud.Models;assembly=UiPath.GoogleCloud" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="UploadOutputTestdataToStorageBucket" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uc="clr-namespace:UiPath.Core;assembly=UiPath.GoogleCloud" xmlns:uga="clr-namespace:UiPath.GoogleCloud.Activities;assembly=UiPath.GoogleCloud.Activities" xmlns:ugc="clr-namespace:UiPath.GoogleCloud.Core;assembly=UiPath.GoogleCloud" xmlns:ugm="clr-namespace:UiPath.GoogleCloud.Models;assembly=UiPath.GoogleCloud" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Destination_folder" Type="InArgument(x:String)" />
     <x:Property Name="str_reportsLocation" Type="InArgument(x:String)" />
@@ -6,7 +6,7 @@
     <x:Property Name="Log_Message_Variable" Type="OutArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>832.6666666666666,3346.6666666666665</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>784.6666666666666,980.6666666666666</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -130,7 +130,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UploadOutputTestdataToStorageBucket" sap:VirtualizedContainerService.HintSize="712.0000000000001,682.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="UploadOutputTestdataToStorageBucket" sap:VirtualizedContainerService.HintSize="598,916" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="in_bucketName" />
       <Variable x:TypeArguments="x:String" Name="Log_Mesage" />
@@ -140,9 +140,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="507.2,659.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="536,828" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Testdata" sap:VirtualizedContainerService.HintSize="534.4,2822.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Testdata" sap:VirtualizedContainerService.HintSize="592,2932" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="Current_Date" />
             <Variable x:TypeArguments="x:String" Name="Current_Time" />
@@ -153,10 +153,13 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Bucket_Name" CacheStrategy="None" DisplayName="Get Asset bucket name" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="500.8,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+          <ui:GetRobotAsset AssetName="Bucket_Name" CacheStrategy="None" DisplayName="Get Asset bucket name" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="530,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1" TimeoutMS="{x:Null}">
             <ui:GetRobotAsset.Value>
               <OutArgument x:TypeArguments="x:String">
-                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">in_bucketName</CSharpReference>
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">
+                  <CSharpReference.Result>
+                    <OutArgument x:TypeArguments="Location(x:String)" />
+                  </CSharpReference.Result>in_bucketName</CSharpReference>
               </OutArgument>
             </ui:GetRobotAsset.Value>
             <sap:WorkflowViewStateService.ViewState>
@@ -166,37 +169,49 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:GetRobotAsset>
-          <Assign sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign sap:VirtualizedContainerService.HintSize="530,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">
-                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">Current_Date</CSharpReference>
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">
+                  <CSharpReference.Result>
+                    <OutArgument x:TypeArguments="Location(x:String)" />
+                  </CSharpReference.Result>Current_Date</CSharpReference>
               </OutArgument>
             </Assign.To>
             <Assign.Value>
               <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">DateTime.Now.ToString("dd_MM_yyyy")</CSharpValue>
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">
+                  <CSharpValue.Result>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </CSharpValue.Result>DateTime.Now.ToString("dd_MM_yyyy")</CSharpValue>
               </InArgument>
             </Assign.Value>
           </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="500.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_13">
+          <Assign sap:VirtualizedContainerService.HintSize="530,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_13">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">
-                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">Current_Time</CSharpReference>
+                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">
+                  <CSharpReference.Result>
+                    <OutArgument x:TypeArguments="Location(x:String)" />
+                  </CSharpReference.Result>Current_Time</CSharpReference>
               </OutArgument>
             </Assign.To>
             <Assign.Value>
               <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">DateTime.Now.ToString("HH:mm:ss")</CSharpValue>
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">
+                  <CSharpValue.Result>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </CSharpValue.Result>DateTime.Now.ToString("HH:mm:ss")</CSharpValue>
               </InArgument>
             </Assign.Value>
           </Assign>
-          <uga:GCPScope ServiceAccountKey="{x:Null}" DisplayName="Google Cloud Scope" sap:VirtualizedContainerService.HintSize="500.8,2360" sap2010:WorkflowViewState.IdRef="GCPScope_1" ScopeType="ServiceAccountKeyFromFile">
+          <uga:GCPScope DisplayName="Google Cloud Scope" sap:VirtualizedContainerService.HintSize="530,2432.6666666666665" sap2010:WorkflowViewState.IdRef="GCPScope_1" ScopeType="ServiceAccountKeyFromFile" ServiceAccountKey="{x:Null}">
             <uga:GCPScope.Body>
               <ActivityAction x:TypeArguments="ugc:GCPCmd">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="ugc:GCPCmd" Name="GoogleCloudScopePropertyTag" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,2171.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2242" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="ugm:GCPBucket" Name="out_Bucket" />
                     <Variable x:TypeArguments="x:String" Name="str_HTMLaddress" />
@@ -206,95 +221,140 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uga:GCPGetBucket ConnectionClient="{x:Null}" ConnectionId="{x:Null}" DisplayName="Get Bucket" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="GCPGetBucket_1" InsideScope="True" UseConnectionService="True">
+                  <uga:GCPGetBucket ConnectionClient="{x:Null}" ConnectionId="{x:Null}" DisplayName="Get Bucket" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="GCPGetBucket_1" InsideScope="True" UseConnectionService="True">
                     <uga:GCPGetBucket.Bucket>
                       <OutArgument x:TypeArguments="ugm:GCPBucket">
-                        <CSharpReference x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">out_Bucket</CSharpReference>
+                        <CSharpReference x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">
+                          <CSharpReference.Result>
+                            <OutArgument x:TypeArguments="Location(ugm:GCPBucket)" />
+                          </CSharpReference.Result>out_Bucket</CSharpReference>
                       </OutArgument>
                     </uga:GCPGetBucket.Bucket>
                     <uga:GCPGetBucket.BucketName>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">in_bucketName</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </CSharpValue.Result>in_bucketName</CSharpValue>
                       </InArgument>
                     </uga:GCPGetBucket.BucketName>
                   </uga:GCPGetBucket>
-                  <uga:GCPUploadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" ContentType="{x:Null}" CustomerManagedKey="{x:Null}" FileToUpload="{x:Null}" Metadata="{x:Null}" Object="{x:Null}" PredefinedAcl="{x:Null}" StorageClass="{x:Null}" Timeout="{x:Null}" DisplayName="Upload Object from File" sap:VirtualizedContainerService.HintSize="433.6,226.4" sap2010:WorkflowViewState.IdRef="GCPUploadObject_4" InsideScope="True" UseConnectionService="True">
+                  <uga:GCPUploadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" ContentType="{x:Null}" CustomerManagedKey="{x:Null}" DisplayName="Upload Object from File" FileToUpload="{x:Null}" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="GCPUploadObject_4" InsideScope="True" Metadata="{x:Null}" Object="{x:Null}" PredefinedAcl="{x:Null}" StorageClass="{x:Null}" Timeout="{x:Null}" UseConnectionService="True">
                     <uga:GCPUploadObject.Bucket>
                       <InArgument x:TypeArguments="ugm:GCPBucket">
-                        <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">out_Bucket</CSharpValue>
+                        <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="ugm:GCPBucket" />
+                          </CSharpValue.Result>out_Bucket</CSharpValue>
                       </InArgument>
                     </uga:GCPUploadObject.Bucket>
                     <uga:GCPUploadObject.FileResourceToUpload>
                       <InArgument x:TypeArguments="upr:IResource">
-                        <CSharpValue x:TypeArguments="upr:IResource" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">LocalResource.FromPath(Destination_folder+"\\OutputFiles\\Output_Data.xlsx")</CSharpValue>
+                        <CSharpValue x:TypeArguments="upr:IResource" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="upr:IResource" />
+                          </CSharpValue.Result>LocalResource.FromPath(Destination_folder+"\\OutputFiles\\Output_Data.xlsx")</CSharpValue>
                       </InArgument>
                     </uga:GCPUploadObject.FileResourceToUpload>
                     <uga:GCPUploadObject.ObjectName>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">"PrintSolutionData/Output_Files/"+product_name+"/"+product_name+" - "+ Current_Date+"/"+"OutputData _"+Current_Time+".xlsx"</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </CSharpValue.Result>"PrintSolutionData/Output_Files/"+product_name+"/"+product_name+" - "+ Current_Date+"/"+"OutputData _"+Current_Time+".xlsx"</CSharpValue>
                       </InArgument>
                     </uga:GCPUploadObject.ObjectName>
                   </uga:GCPUploadObject>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+                  <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_10">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">
-                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">Log_Mesage</CSharpReference>
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">
+                          <CSharpReference.Result>
+                            <OutArgument x:TypeArguments="Location(x:String)" />
+                          </CSharpReference.Result>Log_Mesage</CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">Output Data uploaded to GCP Output_Files folder</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
-                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">Log_Mesage</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:Object" />
+                          </CSharpValue.Result>Log_Mesage</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_12">
+                  <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_12">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">
-                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">Log_Message_Variable</CSharpReference>
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">
+                          <CSharpReference.Result>
+                            <OutArgument x:TypeArguments="Location(x:String)" />
+                          </CSharpReference.Result>Log_Message_Variable</CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">Log_Message_Variable+Environment.NewLine+DateTime.Now+" [Info] "+Log_Mesage</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </CSharpValue.Result>Log_Message_Variable+Environment.NewLine+DateTime.Now+" [Info] "+Log_Mesage</CSharpValue>
                       </InArgument>
                     </Assign.Value>
                   </Assign>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">
-                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">str_HTMLaddress</CSharpReference>
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">
+                          <CSharpReference.Result>
+                            <OutArgument x:TypeArguments="Location(x:String)" />
+                          </CSharpReference.Result>str_HTMLaddress</CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">Directory.GetFiles(str_reportsLocation, "*.html", SearchOption.AllDirectories).OrderByDescending(d =&gt; new FileInfo(d).CreationTime).FirstOrDefault("");</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </CSharpValue.Result>Directory.GetFiles(str_reportsLocation, "*.html", SearchOption.AllDirectories).OrderByDescending(d =&gt; new FileInfo(d).CreationTime).FirstOrDefault("");</CSharpValue>
                       </InArgument>
                     </Assign.Value>
                   </Assign>
-                  <uga:GCPUploadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" ContentType="{x:Null}" CustomerManagedKey="{x:Null}" FileResourceToUpload="{x:Null}" Metadata="{x:Null}" Object="{x:Null}" PredefinedAcl="{x:Null}" Timeout="{x:Null}" DisplayName="Upload Object from File" sap:VirtualizedContainerService.HintSize="433.6,226.4" sap2010:WorkflowViewState.IdRef="GCPUploadObject_2" InsideScope="True" UseConnectionService="True">
+                  <uga:GCPUploadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" ContentType="{x:Null}" CustomerManagedKey="{x:Null}" DisplayName="Upload Object from File" FileResourceToUpload="{x:Null}" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="GCPUploadObject_2" InsideScope="True" Metadata="{x:Null}" Object="{x:Null}" PredefinedAcl="{x:Null}" Timeout="{x:Null}" UseConnectionService="True">
                     <uga:GCPUploadObject.Bucket>
                       <InArgument x:TypeArguments="ugm:GCPBucket">
-                        <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">out_Bucket</CSharpValue>
+                        <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="ugm:GCPBucket" />
+                          </CSharpValue.Result>out_Bucket</CSharpValue>
                       </InArgument>
                     </uga:GCPUploadObject.Bucket>
                     <uga:GCPUploadObject.FileToUpload>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">str_HTMLaddress</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </CSharpValue.Result>str_HTMLaddress</CSharpValue>
                       </InArgument>
                     </uga:GCPUploadObject.FileToUpload>
                     <uga:GCPUploadObject.ObjectName>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">"PrintSolutionData/Output_Files/"+product_name+"/"+product_name+" - "+ Current_Date+"/"+"HtmlReport_"+Current_Time+".html"</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </CSharpValue.Result>"PrintSolutionData/Output_Files/"+product_name+"/"+product_name+" - "+ Current_Date+"/"+"HtmlReport_"+Current_Time+".html"</CSharpValue>
                       </InArgument>
                     </uga:GCPUploadObject.ObjectName>
                     <uga:GCPUploadObject.StorageClass>
                       <InArgument x:TypeArguments="uc:Storage">
-                        <CSharpValue x:TypeArguments="uc:Storage" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">UiPath.Core.Storage.Standard</CSharpValue>
+                        <CSharpValue x:TypeArguments="uc:Storage" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="uc:Storage" />
+                          </CSharpValue.Result>UiPath.Core.Storage.Standard</CSharpValue>
                       </InArgument>
                     </uga:GCPUploadObject.StorageClass>
                     <sap:WorkflowViewStateService.ViewState>
@@ -304,54 +364,78 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uga:GCPUploadObject>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">
-                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">Log_Mesage</CSharpReference>
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">
+                          <CSharpReference.Result>
+                            <OutArgument x:TypeArguments="Location(x:String)" />
+                          </CSharpReference.Result>Log_Mesage</CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">Print Solution Automation html report uploaded to GCP Output_Files folder</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
-                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">Log_Mesage</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:Object" />
+                          </CSharpValue.Result>Log_Mesage</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+                  <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_9">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">
-                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">Log_Message_Variable</CSharpReference>
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">
+                          <CSharpReference.Result>
+                            <OutArgument x:TypeArguments="Location(x:String)" />
+                          </CSharpReference.Result>Log_Message_Variable</CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">Log_Message_Variable+Environment.NewLine+DateTime.Now+" [Info] "+Log_Mesage</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </CSharpValue.Result>Log_Message_Variable+Environment.NewLine+DateTime.Now+" [Info] "+Log_Mesage</CSharpValue>
                       </InArgument>
                     </Assign.Value>
                   </Assign>
-                  <uga:GCPUploadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" ContentType="{x:Null}" CustomerManagedKey="{x:Null}" FileToUpload="{x:Null}" Metadata="{x:Null}" Object="{x:Null}" PredefinedAcl="{x:Null}" Timeout="{x:Null}" DisplayName="Upload Object from File" sap:VirtualizedContainerService.HintSize="433.6,226.4" sap2010:WorkflowViewState.IdRef="GCPUploadObject_5" InsideScope="True" UseConnectionService="True">
+                  <uga:GCPUploadObject ConnectionClient="{x:Null}" ConnectionId="{x:Null}" ContentType="{x:Null}" CustomerManagedKey="{x:Null}" DisplayName="Upload Object from File" FileToUpload="{x:Null}" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="GCPUploadObject_5" InsideScope="True" Metadata="{x:Null}" Object="{x:Null}" PredefinedAcl="{x:Null}" Timeout="{x:Null}" UseConnectionService="True">
                     <uga:GCPUploadObject.Bucket>
                       <InArgument x:TypeArguments="ugm:GCPBucket">
-                        <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">out_Bucket</CSharpValue>
+                        <CSharpValue x:TypeArguments="ugm:GCPBucket" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="ugm:GCPBucket" />
+                          </CSharpValue.Result>out_Bucket</CSharpValue>
                       </InArgument>
                     </uga:GCPUploadObject.Bucket>
                     <uga:GCPUploadObject.FileResourceToUpload>
                       <InArgument x:TypeArguments="upr:IResource">
-                        <CSharpValue x:TypeArguments="upr:IResource" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">LocalResource.FromPath(Destination_folder+"\\OutputLogs\\Execution_Log_"+product_name+".txt")</CSharpValue>
+                        <CSharpValue x:TypeArguments="upr:IResource" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="upr:IResource" />
+                          </CSharpValue.Result>LocalResource.FromPath(Destination_folder+"\\OutputLogs\\Execution_Log_"+product_name+".txt")</CSharpValue>
                       </InArgument>
                     </uga:GCPUploadObject.FileResourceToUpload>
                     <uga:GCPUploadObject.ObjectName>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">"PrintSolutionData/Output_Files/"+product_name+"/"+product_name+" - "+ Current_Date+"/"+"OutputLogs_"+Current_Time+".txt"</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </CSharpValue.Result>"PrintSolutionData/Output_Files/"+product_name+"/"+product_name+" - "+ Current_Date+"/"+"OutputLogs_"+Current_Time+".txt"</CSharpValue>
                       </InArgument>
                     </uga:GCPUploadObject.ObjectName>
                     <uga:GCPUploadObject.StorageClass>
                       <InArgument x:TypeArguments="uc:Storage">
-                        <CSharpValue x:TypeArguments="uc:Storage" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">UiPath.Core.Storage.Standard</CSharpValue>
+                        <CSharpValue x:TypeArguments="uc:Storage" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="uc:Storage" />
+                          </CSharpValue.Result>UiPath.Core.Storage.Standard</CSharpValue>
                       </InArgument>
                     </uga:GCPUploadObject.StorageClass>
                     <sap:WorkflowViewStateService.ViewState>
@@ -361,32 +445,44 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uga:GCPUploadObject>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_14">
+                  <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_14">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">
-                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">Log_Mesage</CSharpReference>
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">
+                          <CSharpReference.Result>
+                            <OutArgument x:TypeArguments="Location(x:String)" />
+                          </CSharpReference.Result>Log_Mesage</CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">Output Logs uploaded to GCP Output_Files folder</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
                     <ui:LogMessage.Message>
                       <InArgument x:TypeArguments="x:Object">
-                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">Log_Mesage</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:Object" />
+                          </CSharpValue.Result>Log_Mesage</CSharpValue>
                       </InArgument>
                     </ui:LogMessage.Message>
                   </ui:LogMessage>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_15">
+                  <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_15">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">
-                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">Log_Message_Variable</CSharpReference>
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">
+                          <CSharpReference.Result>
+                            <OutArgument x:TypeArguments="Location(x:String)" />
+                          </CSharpReference.Result>Log_Message_Variable</CSharpReference>
                       </OutArgument>
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">Log_Message_Variable+Environment.NewLine+DateTime.Now+" [Info] "+Log_Mesage</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">
+                          <CSharpValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </CSharpValue.Result>Log_Message_Variable+Environment.NewLine+DateTime.Now+" [Info] "+Log_Mesage</CSharpValue>
                       </InArgument>
                     </Assign.Value>
                   </Assign>
@@ -395,7 +491,10 @@
             </uga:GCPScope.Body>
             <uga:GCPScope.ServiceAccountKeyFromFile>
               <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Destination_folder+"\\TestData\\GCP_Config.json"</CSharpValue>
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">
+                  <CSharpValue.Result>
+                    <OutArgument x:TypeArguments="x:String" />
+                  </CSharpValue.Result>Destination_folder+"\\TestData\\GCP_Config.json"</CSharpValue>
               </InArgument>
             </uga:GCPScope.ServiceAccountKeyFromFile>
             <sap:WorkflowViewStateService.ViewState>
@@ -408,7 +507,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="473.6,472" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="502,633.3333333333334" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -419,14 +518,14 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="467.2,400.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence sap:VirtualizedContainerService.HintSize="496,561.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">Log_Mesage</CSharpReference>
@@ -436,19 +535,14 @@
                   <InArgument x:TypeArguments="x:String">Files (HTML, Logs, Output data) not uploaded to GCP.</InArgument>
                 </Assign.Value>
               </Assign>
-              <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1">
-                <TerminateWorkflow.Exception>
-                  <InArgument x:TypeArguments="s:Exception">
-                    <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">new BusinessRuleException(Log_Mesage)</CSharpValue>
-                  </InArgument>
-                </TerminateWorkflow.Exception>
-                <TerminateWorkflow.Reason>
+              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="False" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyExpression.OutputMessageFormat>
                   <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">Log_Mesage</CSharpValue>
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_75">Log_Mesage</CSharpValue>
                   </InArgument>
-                </TerminateWorkflow.Reason>
-              </TerminateWorkflow>
-              <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_8">
+                </uta:VerifyExpression.OutputMessageFormat>
+              </uta:VerifyExpression>
+              <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_8">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_14">Log_Message_Variable</CSharpReference>
@@ -460,6 +554,18 @@
                   </InArgument>
                 </Assign.Value>
               </Assign>
+              <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="434,114.66666666666667" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1">
+                <TerminateWorkflow.Exception>
+                  <InArgument x:TypeArguments="s:Exception">
+                    <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">new BusinessRuleException(Log_Mesage)</CSharpValue>
+                  </InArgument>
+                </TerminateWorkflow.Exception>
+                <TerminateWorkflow.Reason>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">Log_Mesage</CSharpValue>
+                  </InArgument>
+                </TerminateWorkflow.Reason>
+              </TerminateWorkflow>
             </Sequence>
           </ActivityAction>
         </Catch>

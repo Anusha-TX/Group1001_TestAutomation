@@ -278,10 +278,10 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Prerequisite" sap:VirtualizedContainerService.HintSize="1310.4,3139.2" sap2010:WorkflowViewState.IdRef="Sequence_121">
+          <Sequence DisplayName="Prerequisite" sap:VirtualizedContainerService.HintSize="1310.4,56.8" sap2010:WorkflowViewState.IdRef="Sequence_121">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
@@ -1311,6 +1311,18 @@
                               </InArgument>
                             </Assign.Value>
                           </Assign>
+                          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" sap:VirtualizedContainerService.HintSize="1142.4,166.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_1">
+                            <ui:WriteTextFile.FileName>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">str_pdfTextfile</CSharpValue>
+                              </InArgument>
+                            </ui:WriteTextFile.FileName>
+                            <ui:WriteTextFile.Text>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66" xml:space="preserve">"PDF COMPARISON RESULT FOR  "+ControlFile</CSharpValue>
+                              </InArgument>
+                            </ui:WriteTextFile.Text>
+                          </ui:WriteTextFile>
                           <Sequence DisplayName="PageCount Logic" sap:VirtualizedContainerService.HintSize="1142.4,56.8" sap2010:WorkflowViewState.IdRef="Sequence_129">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1326,7 +1338,7 @@
                               </ui:FileExistsX.Exists>
                               <ui:FileExistsX.Path>
                                 <InArgument x:TypeArguments="x:String">
-                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">str_baselinePdf</CSharpValue>
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">str_baselinePdf</CSharpValue>
                                 </InArgument>
                               </ui:FileExistsX.Path>
                               <sap:WorkflowViewStateService.ViewState>
@@ -1344,14 +1356,14 @@
                               </ui:FileExistsX.Exists>
                               <ui:FileExistsX.Path>
                                 <InArgument x:TypeArguments="x:String">
-                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">str_TestPDF</CSharpValue>
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">str_TestPDF</CSharpValue>
                                 </InArgument>
                               </ui:FileExistsX.Path>
                             </ui:FileExistsX>
                             <If sap:VirtualizedContainerService.HintSize="449.6,877.6" sap2010:WorkflowViewState.IdRef="If_4">
                               <If.Condition>
                                 <InArgument x:TypeArguments="x:Boolean">
-                                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">bool_fileExists</CSharpValue>
+                                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">bool_fileExists</CSharpValue>
                                 </InArgument>
                               </If.Condition>
                               <sap:WorkflowViewStateService.ViewState>
@@ -1374,7 +1386,7 @@
                                   <gp:GetPDFPageCount sap:VirtualizedContainerService.HintSize="382.4,174.4" sap2010:WorkflowViewState.IdRef="GetPDFPageCount_1">
                                     <gp:GetPDFPageCount.in_fileName>
                                       <InArgument x:TypeArguments="x:String">
-                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">str_baselinePdf</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">str_baselinePdf</CSharpValue>
                                       </InArgument>
                                     </gp:GetPDFPageCount.in_fileName>
                                     <gp:GetPDFPageCount.out_pageCount>
@@ -1386,7 +1398,7 @@
                                   <gp:GetPDFPageCount sap:VirtualizedContainerService.HintSize="382.4,174.4" sap2010:WorkflowViewState.IdRef="GetPDFPageCount_2">
                                     <gp:GetPDFPageCount.in_fileName>
                                       <InArgument x:TypeArguments="x:String">
-                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">str_TestPDF</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">str_TestPDF</CSharpValue>
                                       </InArgument>
                                     </gp:GetPDFPageCount.in_fileName>
                                     <gp:GetPDFPageCount.out_pageCount>
@@ -1398,7 +1410,7 @@
                                   <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
                                     <uta:VerifyExpressionWithOperator.FirstExpression>
                                       <InArgument x:TypeArguments="x:Int32">
-                                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">int_baselinePDFcnt</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">int_baselinePDFcnt</CSharpValue>
                                       </InArgument>
                                     </uta:VerifyExpressionWithOperator.FirstExpression>
                                     <uta:VerifyExpressionWithOperator.Result>
@@ -1408,14 +1420,14 @@
                                     </uta:VerifyExpressionWithOperator.Result>
                                     <uta:VerifyExpressionWithOperator.SecondExpression>
                                       <InArgument x:TypeArguments="x:Int32">
-                                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">out_pageCount_Testfile</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">out_pageCount_Testfile</CSharpValue>
                                       </InArgument>
                                     </uta:VerifyExpressionWithOperator.SecondExpression>
                                   </uta:VerifyExpressionWithOperator>
                                   <If sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="If_3">
                                     <If.Condition>
                                       <InArgument x:TypeArguments="x:Boolean">
-                                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">Verifiy_eqaul_pagecount</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">Verifiy_eqaul_pagecount</CSharpValue>
                                       </InArgument>
                                     </If.Condition>
                                     <sap:WorkflowViewStateService.ViewState>
@@ -1440,7 +1452,7 @@
                                           </Assign.To>
                                           <Assign.Value>
                                             <InArgument x:TypeArguments="x:Int32">
-                                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">out_pageCount_Testfile</CSharpValue>
+                                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_75">out_pageCount_Testfile</CSharpValue>
                                             </InArgument>
                                           </Assign.Value>
                                           <sap:WorkflowViewStateService.ViewState>
@@ -1453,29 +1465,29 @@
                                         <gr:passedStep sap:VirtualizedContainerService.HintSize="433.6,278.4" sap2010:WorkflowViewState.IdRef="passedStep_1" str_in_expectedStep="Step">
                                           <gr:passedStep.str_in_actualStep>
                                             <InArgument x:TypeArguments="x:String">
-                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">"Page counts match for control and test pdf files: "+PageCount</CSharpValue>
+                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">"Page counts match for control and test pdf files: "+PageCount</CSharpValue>
                                             </InArgument>
                                           </gr:passedStep.str_in_actualStep>
                                           <gr:passedStep.str_in_reportId>
                                             <InArgument x:TypeArguments="x:Int32">
-                                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_75">str_reportID</CSharpValue>
+                                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">str_reportID</CSharpValue>
                                             </InArgument>
                                           </gr:passedStep.str_in_reportId>
                                           <gr:passedStep.str_in_testId>
                                             <InArgument x:TypeArguments="x:String">
-                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">str_testID</CSharpValue>
+                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_78">str_testID</CSharpValue>
                                             </InArgument>
                                           </gr:passedStep.str_in_testId>
                                         </gr:passedStep>
                                         <ui:AppendLine File="{x:Null}" DisplayName="Append Line" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="AppendLine_1" UseDefaultEncoding="False">
                                           <ui:AppendLine.FileName>
                                             <InArgument x:TypeArguments="x:String">
-                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">str_pdfTextfile</CSharpValue>
+                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">str_pdfTextfile</CSharpValue>
                                             </InArgument>
                                           </ui:AppendLine.FileName>
                                           <ui:AppendLine.Text>
                                             <InArgument x:TypeArguments="x:String">
-                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_78">"Page counts match for control and test pdf files: "+PageCount</CSharpValue>
+                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_80">"Page counts match for control and test pdf files: "+PageCount</CSharpValue>
                                             </InArgument>
                                           </ui:AppendLine.Text>
                                           <sap:WorkflowViewStateService.ViewState>
@@ -1501,7 +1513,7 @@
                                         <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="500.8,225.6" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_2" Operator="GreaterThan" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
                                           <uta:VerifyExpressionWithOperator.FirstExpression>
                                             <InArgument x:TypeArguments="x:Int32">
-                                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">int_baselinePDFcnt</CSharpValue>
+                                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_81">int_baselinePDFcnt</CSharpValue>
                                             </InArgument>
                                           </uta:VerifyExpressionWithOperator.FirstExpression>
                                           <uta:VerifyExpressionWithOperator.Result>
@@ -1511,14 +1523,14 @@
                                           </uta:VerifyExpressionWithOperator.Result>
                                           <uta:VerifyExpressionWithOperator.SecondExpression>
                                             <InArgument x:TypeArguments="x:Int32">
-                                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_80">out_pageCount_Testfile</CSharpValue>
+                                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_82">out_pageCount_Testfile</CSharpValue>
                                             </InArgument>
                                           </uta:VerifyExpressionWithOperator.SecondExpression>
                                         </uta:VerifyExpressionWithOperator>
                                         <If sap:VirtualizedContainerService.HintSize="500.8,2529.6" sap2010:WorkflowViewState.IdRef="If_2">
                                           <If.Condition>
                                             <InArgument x:TypeArguments="x:Boolean">
-                                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_81">Verify_PageCount_less</CSharpValue>
+                                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_83">Verify_PageCount_less</CSharpValue>
                                             </InArgument>
                                           </If.Condition>
                                           <sap:WorkflowViewStateService.ViewState>
@@ -1543,48 +1555,48 @@
                                                 </Assign.To>
                                                 <Assign.Value>
                                                   <InArgument x:TypeArguments="x:Int32">
-                                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_82">out_pageCount_Testfile</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_84">out_pageCount_Testfile</CSharpValue>
                                                   </InArgument>
                                                 </Assign.Value>
                                               </Assign>
                                               <ui:AppendLine File="{x:Null}" DisplayName="Append Line" sap:VirtualizedContainerService.HintSize="433.6,166.4" sap2010:WorkflowViewState.IdRef="AppendLine_2" UseDefaultEncoding="False">
                                                 <ui:AppendLine.FileName>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_83">str_pdfTextfile</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85">str_pdfTextfile</CSharpValue>
                                                   </InArgument>
                                                 </ui:AppendLine.FileName>
                                                 <ui:AppendLine.Text>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_84" xml:space="preserve">"Control File has more pages than Test File : Control File: "+int_baselinePDFcnt+"  Test File: "+out_pageCount_Testfile</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_86" xml:space="preserve">"Control File has more pages than Test File : Control File: "+int_baselinePDFcnt+"  Test File: "+out_pageCount_Testfile</CSharpValue>
                                                   </InArgument>
                                                 </ui:AppendLine.Text>
                                               </ui:AppendLine>
                                               <gr:failedStep sap:VirtualizedContainerService.HintSize="433.6,278.4" sap2010:WorkflowViewState.IdRef="failedStep_1" str_in_expectedStep="Step">
                                                 <gr:failedStep.str_in_actualStep>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85" xml:space="preserve">"Control File has more pages than Test File : Control File: "+int_baselinePDFcnt+"  Test File: "+out_pageCount_Testfile</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_87" xml:space="preserve">"Control File has more pages than Test File : Control File: "+int_baselinePDFcnt+"  Test File: "+out_pageCount_Testfile</CSharpValue>
                                                   </InArgument>
                                                 </gr:failedStep.str_in_actualStep>
                                                 <gr:failedStep.str_in_reportId>
                                                   <InArgument x:TypeArguments="x:Int32">
-                                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_86">str_reportID</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_88">str_reportID</CSharpValue>
                                                   </InArgument>
                                                 </gr:failedStep.str_in_reportId>
                                                 <gr:failedStep.str_in_testId>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_87">str_testID</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">str_testID</CSharpValue>
                                                   </InArgument>
                                                 </gr:failedStep.str_in_testId>
                                               </gr:failedStep>
                                               <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Result" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="433.6,224.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_1">
                                                 <ui:UpdateRowItem.Row>
                                                   <InArgument x:TypeArguments="sd:DataRow">
-                                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">CurrentRow</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_91">CurrentRow</CSharpValue>
                                                   </InArgument>
                                                 </ui:UpdateRowItem.Row>
                                                 <ui:UpdateRowItem.Value>
                                                   <InArgument x:TypeArguments="x:Object">
-                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_88">"Fail"</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_90">"Fail"</CSharpValue>
                                                   </InArgument>
                                                 </ui:UpdateRowItem.Value>
                                                 <sap:WorkflowViewStateService.ViewState>
@@ -1607,7 +1619,7 @@
                                               <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="False" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
                                                 <uta:VerifyExpression.OutputMessageFormat>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_90">Log_Message_Variable</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_92">Log_Message_Variable</CSharpValue>
                                                   </InArgument>
                                                 </uta:VerifyExpression.OutputMessageFormat>
                                               </uta:VerifyExpression>
@@ -1619,7 +1631,7 @@
                                                 </Assign.To>
                                                 <Assign.Value>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_91">Log_Message+Environment.NewLine+DateTime.Now+" [Error] "+Log_Message_Variable</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_93">Log_Message+Environment.NewLine+DateTime.Now+" [Error] "+Log_Message_Variable</CSharpValue>
                                                   </InArgument>
                                                 </Assign.Value>
                                               </Assign>
@@ -1646,7 +1658,7 @@
                                               <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="False" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
                                                 <uta:VerifyExpression.OutputMessageFormat>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_92">Log_Message_Variable</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_94">Log_Message_Variable</CSharpValue>
                                                   </InArgument>
                                                 </uta:VerifyExpression.OutputMessageFormat>
                                               </uta:VerifyExpression>
@@ -1658,7 +1670,7 @@
                                                 </Assign.To>
                                                 <Assign.Value>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_93">Log_Message+Environment.NewLine+DateTime.Now+" [Error] "+Log_Message_Variable</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_95">Log_Message+Environment.NewLine+DateTime.Now+" [Error] "+Log_Message_Variable</CSharpValue>
                                                   </InArgument>
                                                 </Assign.Value>
                                               </Assign>
@@ -1670,48 +1682,48 @@
                                                 </Assign.To>
                                                 <Assign.Value>
                                                   <InArgument x:TypeArguments="x:Int32">
-                                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_94">int_baselinePDFcnt</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_96">int_baselinePDFcnt</CSharpValue>
                                                   </InArgument>
                                                 </Assign.Value>
                                               </Assign>
                                               <ui:AppendLine File="{x:Null}" DisplayName="Append Line" sap:VirtualizedContainerService.HintSize="433.6,166.4" sap2010:WorkflowViewState.IdRef="AppendLine_3" UseDefaultEncoding="False">
                                                 <ui:AppendLine.FileName>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_95">str_pdfTextfile</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_97">str_pdfTextfile</CSharpValue>
                                                   </InArgument>
                                                 </ui:AppendLine.FileName>
                                                 <ui:AppendLine.Text>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_96" xml:space="preserve">"Control File has less pages than Test File : Control File: "+int_baselinePDFcnt+"  Test File: "+out_pageCount_Testfile</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98" xml:space="preserve">"Control File has less pages than Test File : Control File: "+int_baselinePDFcnt+"  Test File: "+out_pageCount_Testfile</CSharpValue>
                                                   </InArgument>
                                                 </ui:AppendLine.Text>
                                               </ui:AppendLine>
                                               <gr:failedStep sap:VirtualizedContainerService.HintSize="433.6,278.4" sap2010:WorkflowViewState.IdRef="failedStep_2" str_in_expectedStep="Step">
                                                 <gr:failedStep.str_in_actualStep>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_97" xml:space="preserve">"Control File has less pages than Test File : Control File: "+int_baselinePDFcnt+"  Test File: "+out_pageCount_Testfile</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_99" xml:space="preserve">"Control File has less pages than Test File : Control File: "+int_baselinePDFcnt+"  Test File: "+out_pageCount_Testfile</CSharpValue>
                                                   </InArgument>
                                                 </gr:failedStep.str_in_actualStep>
                                                 <gr:failedStep.str_in_reportId>
                                                   <InArgument x:TypeArguments="x:Int32">
-                                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">str_reportID</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100">str_reportID</CSharpValue>
                                                   </InArgument>
                                                 </gr:failedStep.str_in_reportId>
                                                 <gr:failedStep.str_in_testId>
                                                   <InArgument x:TypeArguments="x:String">
-                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_99">str_testID</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">str_testID</CSharpValue>
                                                   </InArgument>
                                                 </gr:failedStep.str_in_testId>
                                               </gr:failedStep>
                                               <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Result" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="433.6,216" sap2010:WorkflowViewState.IdRef="UpdateRowItem_2">
                                                 <ui:UpdateRowItem.Row>
                                                   <InArgument x:TypeArguments="sd:DataRow">
-                                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">CurrentRow</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">CurrentRow</CSharpValue>
                                                   </InArgument>
                                                 </ui:UpdateRowItem.Row>
                                                 <ui:UpdateRowItem.Value>
                                                   <InArgument x:TypeArguments="x:Object">
-                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100">"Fail"</CSharpValue>
+                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_102">"Fail"</CSharpValue>
                                                   </InArgument>
                                                 </ui:UpdateRowItem.Value>
                                                 <sap:WorkflowViewStateService.ViewState>
@@ -1740,12 +1752,12 @@
                                   <gr:failedStep sap:VirtualizedContainerService.HintSize="433.6,278.4" sap2010:WorkflowViewState.IdRef="failedStep_3" str_in_actualStep="PDF file doesn't exist" str_in_expectedStep="Step">
                                     <gr:failedStep.str_in_reportId>
                                       <InArgument x:TypeArguments="x:Int32">
-                                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_102">str_reportID</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_104">str_reportID</CSharpValue>
                                       </InArgument>
                                     </gr:failedStep.str_in_reportId>
                                     <gr:failedStep.str_in_testId>
                                       <InArgument x:TypeArguments="x:String">
-                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">str_testID</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_105">str_testID</CSharpValue>
                                       </InArgument>
                                     </gr:failedStep.str_in_testId>
                                   </gr:failedStep>
@@ -1763,7 +1775,7 @@
                                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error">
                                     <ui:LogMessage.Message>
                                       <InArgument x:TypeArguments="x:Object">
-                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_104">Log_Message_Variable</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_106">Log_Message_Variable</CSharpValue>
                                       </InArgument>
                                     </ui:LogMessage.Message>
                                   </ui:LogMessage>
@@ -1775,19 +1787,19 @@
                                     </Assign.To>
                                     <Assign.Value>
                                       <InArgument x:TypeArguments="x:String">
-                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_105">Log_Message+Environment.NewLine+DateTime.Now+" [Error] "+Log_Message_Variable</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_107">Log_Message+Environment.NewLine+DateTime.Now+" [Error] "+Log_Message_Variable</CSharpValue>
                                       </InArgument>
                                     </Assign.Value>
                                   </Assign>
                                   <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Result" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="433.6,216" sap2010:WorkflowViewState.IdRef="UpdateRowItem_3">
                                     <ui:UpdateRowItem.Row>
                                       <InArgument x:TypeArguments="sd:DataRow">
-                                        <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_107">CurrentRow</CSharpValue>
+                                        <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_109">CurrentRow</CSharpValue>
                                       </InArgument>
                                     </ui:UpdateRowItem.Row>
                                     <ui:UpdateRowItem.Value>
                                       <InArgument x:TypeArguments="x:Object">
-                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_106">"PDF file doesn't exist"</CSharpValue>
+                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_108">"PDF file doesn't exist"</CSharpValue>
                                       </InArgument>
                                     </ui:UpdateRowItem.Value>
                                     <sap:WorkflowViewStateService.ViewState>
@@ -1803,12 +1815,12 @@
                             <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="TestPDF_PageCount" DisplayName="Update Row Item Test PDF Page Count" sap:VirtualizedContainerService.HintSize="449.6,224.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_4">
                               <ui:UpdateRowItem.Row>
                                 <InArgument x:TypeArguments="sd:DataRow">
-                                  <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_109">CurrentRow</CSharpValue>
+                                  <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_111">CurrentRow</CSharpValue>
                                 </InArgument>
                               </ui:UpdateRowItem.Row>
                               <ui:UpdateRowItem.Value>
                                 <InArgument x:TypeArguments="x:Object">
-                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_108">out_pageCount_Testfile</CSharpValue>
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_110">out_pageCount_Testfile</CSharpValue>
                                 </InArgument>
                               </ui:UpdateRowItem.Value>
                               <sap:WorkflowViewStateService.ViewState>
@@ -1821,12 +1833,12 @@
                             <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="ControlPDF_PageCount" DisplayName="Update Row Item Control PDF Page Count" sap:VirtualizedContainerService.HintSize="449.6,216" sap2010:WorkflowViewState.IdRef="UpdateRowItem_5">
                               <ui:UpdateRowItem.Row>
                                 <InArgument x:TypeArguments="sd:DataRow">
-                                  <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_111">CurrentRow</CSharpValue>
+                                  <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_113">CurrentRow</CSharpValue>
                                 </InArgument>
                               </ui:UpdateRowItem.Row>
                               <ui:UpdateRowItem.Value>
                                 <InArgument x:TypeArguments="x:Object">
-                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_110">int_baselinePDFcnt</CSharpValue>
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_112">int_baselinePDFcnt</CSharpValue>
                                 </InArgument>
                               </ui:UpdateRowItem.Value>
                               <sap:WorkflowViewStateService.ViewState>
@@ -1837,10 +1849,10 @@
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:UpdateRowItem>
                           </Sequence>
-                          <If DisplayName="If(Text)" sap:VirtualizedContainerService.HintSize="1142.4,11448" sap2010:WorkflowViewState.IdRef="If_30">
+                          <If DisplayName="If(Text)" sap:VirtualizedContainerService.HintSize="1142.4,11281.6" sap2010:WorkflowViewState.IdRef="If_30">
                             <If.Condition>
                               <InArgument x:TypeArguments="x:Boolean">
-                                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_112">RowValue=="Y" &amp;&amp; Product_Code==Str_out_variable</CSharpValue>
+                                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_114">RowValue=="Y" &amp;&amp; Product_Code==Str_out_variable</CSharpValue>
                               </InArgument>
                             </If.Condition>
                             <sap:WorkflowViewStateService.ViewState>
@@ -1850,14 +1862,14 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1108.8,10600" sap2010:WorkflowViewState.IdRef="Sequence_196">
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1108.8,10433.6" sap2010:WorkflowViewState.IdRef="Sequence_196">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Sequence DisplayName="TC001" sap:VirtualizedContainerService.HintSize="1075.2,10540" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                <Sequence DisplayName="TC001" sap:VirtualizedContainerService.HintSize="1075.2,10373.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="s:String[]" Name="in_str2_array" />
                                     <Variable x:TypeArguments="x:String" Name="str_pdfpageNum" />
@@ -1870,18 +1882,6 @@
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" sap:VirtualizedContainerService.HintSize="1041.6,166.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_1">
-                                    <ui:WriteTextFile.FileName>
-                                      <InArgument x:TypeArguments="x:String">
-                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_113">str_pdfTextfile</CSharpValue>
-                                      </InArgument>
-                                    </ui:WriteTextFile.FileName>
-                                    <ui:WriteTextFile.Text>
-                                      <InArgument x:TypeArguments="x:String">
-                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_114" xml:space="preserve">"PDF COMPARISON RESULT FOR  "+ControlFile</CSharpValue>
-                                      </InArgument>
-                                    </ui:WriteTextFile.Text>
-                                  </ui:WriteTextFile>
                                   <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="PDFPageNumber" CacheStrategy="None" DisplayName="Get Asset page number" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="1041.6,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
                                     <ui:GetRobotAsset.Value>
                                       <OutArgument x:TypeArguments="x:String">

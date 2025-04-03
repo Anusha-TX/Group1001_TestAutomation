@@ -189,7 +189,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence - PDF Comparsion" sap:VirtualizedContainerService.HintSize="1380.8,16780" sap2010:WorkflowViewState.IdRef="Sequence_120">
+  <Sequence DisplayName="Sequence - PDF Comparsion" sap:VirtualizedContainerService.HintSize="1380.8,19862.4" sap2010:WorkflowViewState.IdRef="Sequence_120">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_formNumber" />
       <Variable x:TypeArguments="x:String" Name="str_TestFooter" />
@@ -263,7 +263,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1380.8,16756.8" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1380.8,19839.2" sap2010:WorkflowViewState.IdRef="TryCatch_8">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -271,17 +271,24 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1344,16479.2" sap2010:WorkflowViewState.IdRef="Sequence_576">
+        <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="1344,19561.6" sap2010:WorkflowViewState.IdRef="Sequence_576">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Prerequisite" sap:VirtualizedContainerService.HintSize="1310.4,56.8" sap2010:WorkflowViewState.IdRef="Sequence_470">
+          <Sequence DisplayName="Prerequisite" sap:VirtualizedContainerService.HintSize="1310.4,3139.2" sap2010:WorkflowViewState.IdRef="Sequence_470">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="TerminateArgumnet">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">No</Literal>
+                </Variable.Default>
+              </Variable>
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
@@ -490,6 +497,9 @@
                 </InOutArgument>
                 <InOutArgument x:TypeArguments="x:String" x:Key="Log_Message_Variable">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_568">Log_Message_Variable</CSharpReference>
+                </InOutArgument>
+                <InOutArgument x:TypeArguments="x:String" x:Key="TerminateArgument">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_788">TerminateArgumnet</CSharpReference>
                 </InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>

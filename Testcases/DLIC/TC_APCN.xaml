@@ -532,11 +532,14 @@
                 <InOutArgument x:TypeArguments="x:String" x:Key="Str_out_variable">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_571">Str_out_variable</CSharpReference>
                 </InOutArgument>
+                <InOutArgument x:TypeArguments="x:String" x:Key="Log_Message_Variable">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_573">Log_Message_Variable</CSharpReference>
+                </InOutArgument>
                 <InOutArgument x:TypeArguments="x:String" x:Key="Str_Out_Excel">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_572">ExcelPath</CSharpReference>
                 </InOutArgument>
-                <InOutArgument x:TypeArguments="x:String" x:Key="Log_Message_Variable">
-                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_573">Log_Message_Variable</CSharpReference>
+                <InOutArgument x:TypeArguments="x:String" x:Key="TerminateArgument">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_789">TerminateArgumnet</CSharpReference>
                 </InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
@@ -574,6 +577,9 @@
                 </InOutArgument>
                 <InOutArgument x:TypeArguments="x:String" x:Key="Log_Message_Variable">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_578">Log_Message_Variable</CSharpReference>
+                </InOutArgument>
+                <InOutArgument x:TypeArguments="x:String" x:Key="TerminateArgument">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_790">TerminateArgumnet</CSharpReference>
                 </InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
               <sap:WorkflowViewStateService.ViewState>

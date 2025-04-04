@@ -155,11 +155,7 @@
       <TryCatch.Try>
         <Sequence DisplayName="GCP_Move_TestXML_To_MOVEitXML" sap:VirtualizedContainerService.HintSize="784,4427.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <Sequence.Variables>
-            <Variable x:TypeArguments="x:String" Name="Str_out_variable_sheet">
-              <Variable.Default>
-                <Literal x:TypeArguments="x:String">Test_XML Copy</Literal>
-              </Variable.Default>
-            </Variable>
+            <Variable x:TypeArguments="x:String" Name="Str_out_variable_sheet" />
             <Variable x:TypeArguments="sd:DataTable" Name="TestDataDT" />
             <Variable x:TypeArguments="x:String" Name="ExcelPath" />
             <Variable x:TypeArguments="x:String" Name="Destination_folder" />
@@ -209,17 +205,12 @@
               </InArgument>
             </Assign.Value>
           </Assign>
-          <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="721.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_1">
+          <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="721.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Test_XML Copy">
             <ui:ReadRange.DataTable>
               <OutArgument x:TypeArguments="sd:DataTable">
                 <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">TestDataDT</CSharpReference>
               </OutArgument>
             </ui:ReadRange.DataTable>
-            <ui:ReadRange.SheetName>
-              <InArgument x:TypeArguments="x:String">
-                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Str_out_variable_sheet</CSharpValue>
-              </InArgument>
-            </ui:ReadRange.SheetName>
             <ui:ReadRange.WorkbookPath>
               <InArgument x:TypeArguments="x:String">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">ExcelPath</CSharpValue>

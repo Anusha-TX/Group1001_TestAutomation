@@ -7,7 +7,7 @@
     <x:Property Name="TerminateArgument_Datevalidation" Type="InOutArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>976.8,8598.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>976.8,8772.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -123,7 +123,7 @@
       <AssemblyReference>UiPath.GoogleCloud</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Date_Validation" sap:VirtualizedContainerService.HintSize="961.6,8533.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Date_Validation" sap:VirtualizedContainerService.HintSize="961.6,8708" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Log_Mesage" />
     </Sequence.Variables>
@@ -132,6 +132,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="899.2,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_142">"Hii"</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
     <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="899.2,8444.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
         <Sequence sap:VirtualizedContainerService.HintSize="862.4,8190.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
@@ -1041,7 +1048,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="496,552" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence sap:VirtualizedContainerService.HintSize="496,543.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1078,18 +1085,19 @@
                   </InArgument>
                 </Assign.Value>
               </Assign>
-              <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_2">
-                <TerminateWorkflow.Exception>
-                  <InArgument x:TypeArguments="s:Exception">
-                    <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">new BusinessRuleException(exception.Message)</CSharpValue>
-                  </InArgument>
-                </TerminateWorkflow.Exception>
-                <TerminateWorkflow.Reason>
-                  <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">Log_Mesage</CSharpValue>
-                  </InArgument>
-                </TerminateWorkflow.Reason>
-              </TerminateWorkflow>
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_67">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_79">
+                      <CSharpReference.Result>
+                        <OutArgument x:TypeArguments="Location(x:String)" />
+                      </CSharpReference.Result>TerminateArgument_Datevalidation</CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">No</InArgument>
+                </Assign.Value>
+              </Assign>
             </Sequence>
           </ActivityAction>
         </Catch>

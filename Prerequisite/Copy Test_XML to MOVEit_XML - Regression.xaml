@@ -138,7 +138,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GCP_Move_TestXML_To_MOVEitXML" sap:VirtualizedContainerService.HintSize="883.2,4770.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GCP_Move_TestXML_To_MOVEitXML" sap:VirtualizedContainerService.HintSize="792,4676" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Regression_Value" />
       <Variable x:TypeArguments="x:String" Name="TestXMLFlag" />
@@ -151,9 +151,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="820.8,4681.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="792,4652.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="GCP_Move_TestXML_To_MOVEitXML" sap:VirtualizedContainerService.HintSize="784,4427.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="GCP_Move_TestXML_To_MOVEitXML" sap:VirtualizedContainerService.HintSize="755.2,4398.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="Str_out_variable_sheet" />
             <Variable x:TypeArguments="sd:DataTable" Name="TestDataDT" />
@@ -168,7 +168,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Regression_Time" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="721.6,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+          <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="GCP_RegTest_WaitTime" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Print Solution Automation" sap:VirtualizedContainerService.HintSize="721.6,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
             <ui:GetRobotAsset.Value>
               <OutArgument x:TypeArguments="x:String">
                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">Regression_Time</CSharpReference>

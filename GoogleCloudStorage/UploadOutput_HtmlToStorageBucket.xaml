@@ -131,7 +131,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UploadOutputTestdataToStorageBucket" sap:VirtualizedContainerService.HintSize="712.0000000000001,3253.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="UploadOutputTestdataToStorageBucket" sap:VirtualizedContainerService.HintSize="712.0000000000001,3197.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="in_bucketName" />
       <Variable x:TypeArguments="x:String" Name="Log_Mesage" />
@@ -141,9 +141,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="611.2,3230.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="611.2,3174.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Testdata" sap:VirtualizedContainerService.HintSize="574.4,2976" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Testdata" sap:VirtualizedContainerService.HintSize="574.4,2920" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="Current_Date" />
             <Variable x:TypeArguments="x:String" Name="Current_Time" />
@@ -170,7 +170,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:GetRobotAsset>
-          <Assign sap:VirtualizedContainerService.HintSize="540.8,84.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign sap:VirtualizedContainerService.HintSize="540.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_1">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">
                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">
@@ -194,7 +194,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="540.8,84.8" sap2010:WorkflowViewState.IdRef="Assign_13">
+          <Assign sap:VirtualizedContainerService.HintSize="540.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_13">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">
                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">
@@ -582,7 +582,7 @@
                       </uga:GCPUploadObject.FileResourceToUpload>
                       <uga:GCPUploadObject.ObjectName>
                         <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_80">"RateSheetData/Output_Files/"+product_name+"/"+product_name+" - "+ Current_Date+"/"+"OutputData _"+Current_Time+".xlsx"</CSharpValue>
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_97">"RateSheetData/Output_Files/"+product_name+" - "+ Current_Date+"/"+"OutputData _"+Current_Time+".xlsx"</CSharpValue>
                         </InArgument>
                       </uga:GCPUploadObject.ObjectName>
                     </uga:GCPUploadObject>
@@ -664,7 +664,7 @@
                       </uga:GCPUploadObject.FileToUpload>
                       <uga:GCPUploadObject.ObjectName>
                         <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_86">"RateSheetData/Output_Files/"+product_name+"/"+product_name+" - "+ Current_Date+"/"+"HtmlReport_"+Current_Time+".html"</CSharpValue>
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">"RateSheetData/Output_Files/"+product_name+" - "+ Current_Date+"/"+"HtmlReport_"+Current_Time+".html"</CSharpValue>
                         </InArgument>
                       </uga:GCPUploadObject.ObjectName>
                       <uga:GCPUploadObject.StorageClass>
@@ -742,7 +742,7 @@
                       </uga:GCPUploadObject.FileResourceToUpload>
                       <uga:GCPUploadObject.ObjectName>
                         <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_92">"RateSheetData/Output_Files/"+product_name+"/"+product_name+" - "+ Current_Date+"/"+"OutputLogs_"+Current_Time+".txt"</CSharpValue>
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_99">"RateSheetData/Output_Files/"+product_name+" - "+ Current_Date+"/"+"OutputLogs_"+Current_Time+".txt"</CSharpValue>
                         </InArgument>
                       </uga:GCPUploadObject.ObjectName>
                       <uga:GCPUploadObject.StorageClass>
@@ -834,7 +834,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="467.2,481.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence sap:VirtualizedContainerService.HintSize="467.2,528" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -858,7 +858,7 @@
                   </InArgument>
                 </uta:VerifyExpression.OutputMessageFormat>
               </uta:VerifyExpression>
-              <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_8">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_14">Log_Message_Variable</CSharpReference>
@@ -870,7 +870,7 @@
                   </InArgument>
                 </Assign.Value>
               </Assign>
-              <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="434,114.66666666666667" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1">
+              <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1">
                 <TerminateWorkflow.Exception>
                   <InArgument x:TypeArguments="s:Exception">
                     <CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">new BusinessRuleException(Log_Mesage)</CSharpValue>
